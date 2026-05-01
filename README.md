@@ -1,0 +1,2 @@
+# manicwm-pages
+manicwm-pages
