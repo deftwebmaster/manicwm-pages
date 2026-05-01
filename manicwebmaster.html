@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DFW Freelance Web Developer & Branding | ManicWebmaster</title>
+  <meta name="description" content="DFW freelance web developer and branding help for local businesses that need websites, landing pages, logos, and conversion-focused customer flow.">
+  <meta name="theme-color" content="#04050d">
+  <link rel="canonical" href="https://manicwebmaster.com/">
+  <meta property="og:title" content="ManicWebmaster | Websites, Branding, and Local Business Lead Flow">
+  <meta property="og:description" content="Text Matt your idea and get a no-pressure website or branding concept built around real customer action.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://manicwebmaster.com/">
+  <meta property="og:site_name" content="ManicWebmaster">
+  <meta property="og:image" content="https://manicwebmaster.com/card.png">
+  <meta property="og:image:secure_url" content="https://manicwebmaster.com/card.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="ManicWebmaster freelance web development and branding for DFW businesses">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ManicWebmaster | Websites, Branding, and Local Business Lead Flow">
+  <meta name="twitter:description" content="Text Matt your idea and get a no-pressure website or branding concept built around real customer action.">
+  <meta name="twitter:image" content="https://manicwebmaster.com/card.png">
+  <meta name="twitter:image:alt" content="ManicWebmaster freelance web development and branding for DFW businesses">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2304050d'/%3E%3Cpath d='M10 46V18h10l12 16 12-16h10v28H43V33L32 47 21 33v13H10z' fill='%231d8fff'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "ManicWebmaster",
+      "description": "Freelance web development and business branding for local businesses in the Dallas-Fort Worth area.",
+      "areaServed": "Dallas-Fort Worth, Texas",
+      "email": "matt@manicwebmaster.com",
+      "telephone": "+1-469-368-7662",
+      "founder": {
+        "@type": "Person",
+        "name": "Matt Livingston"
+      },
+      "serviceType": [
+        "Web design",
+        "Web development",
+        "Landing pages",
+        "Business branding",
+        "Logo design",
+        "Local business website strategy"
+      ]
+    }
+  </script>
+  <!-- * lone wolf, own sky | Matt Livingston -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #04050d;
+      --bg2:         #080c1a;
+      --blue:        #1d8fff;
+      --blue-glow:   #1d8fff88;
+      --purple:      #7c3aed;
+      --text:        #e8eaf6;
+      --muted:       #7b8ab8;
+      --white:       #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 76px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Barlow', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      line-height: 1.05;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      background: rgba(4,5,13,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(29,143,255,0.12);
+    }
+    .nav-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--blue); }
+    .nav-links { display: flex; gap: clamp(12px, 3vw, 24px); list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: clamp(0.72rem, 2.4vw, 0.85rem);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--blue); }
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 4px;
+    }
+
+    /* STICKY MOBILE CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 900;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background: rgba(4,5,13,0.95);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(29,143,255,0.2);
+      padding: 8px 12px 12px;
+      gap: 8px;
+    }
+    .sticky-cta a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      padding: 8px 4px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.2s;
+    }
+    .sticky-cta .cta-text {
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+      box-shadow: 0 0 20px var(--blue-glow);
+    }
+    .sticky-cta .cta-call {
+      background: rgba(29,143,255,0.1);
+      color: var(--blue);
+      border: 1px solid rgba(29,143,255,0.3);
+    }
+    .sticky-cta .cta-email {
+      background: rgba(124,58,237,0.1);
+      color: #a78bfa;
+      border: 1px solid rgba(124,58,237,0.3);
+    }
+    .sticky-cta a:active { transform: scale(0.96); }
+    @media (min-width: 768px) { .sticky-cta { display: none; } }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 80px 20px 150px;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('hero.webp');
+      background-size: cover;
+      background-position: center top;
+      filter: brightness(0.35) saturate(1.4);
+    }
+    .hero-glow {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 80%, rgba(29,143,255,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 30%, rgba(124,58,237,0.15) 0%, transparent 60%),
+        linear-gradient(to top, rgba(4,5,13,0.9) 0%, rgba(4,5,13,0.3) 50%, rgba(4,5,13,0.5) 100%);
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 480px; }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 12px;
+      padding: 4px 10px;
+      border: 1px solid rgba(29,143,255,0.4);
+      border-radius: 2px;
+    }
+    .hero h1 {
+      font-size: clamp(2.8rem, 10vw, 5rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .hero h1 em { font-style: normal; color: var(--blue); }
+    .hero-sub {
+      font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .hero-authority {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 28px;
+    }
+    .hero-cta-primary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+      text-decoration: none;
+      padding: 18px 28px;
+      border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.4rem, 5vw, 1.8rem);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      box-shadow: 0 0 40px var(--blue-glow), 0 4px 20px rgba(0,0,0,0.4);
+      margin-bottom: 12px;
+      transition: all 0.2s;
+      width: fit-content;
+    }
+    .hero-cta-primary:hover {
+      box-shadow: 0 0 60px var(--blue-glow), 0 4px 30px rgba(0,0,0,0.5);
+      transform: translateY(-2px);
+    }
+    .hero-cta-row { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: all 0.2s;
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
+    .hero-trust {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hero-trust::before { content: '⚡'; font-size: 0.9rem; }
+    .hero-trust strong { color: var(--blue); font-weight: 600; }
+
+    /* SECTIONS */
+    section {
+      padding: 64px 20px;
+      scroll-margin-top: 76px;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(2rem, 7vw, 3.2rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+    .accent-line {
+      height: 3px;
+      width: 60px;
+      background: linear-gradient(90deg, var(--blue), var(--purple));
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
+
+    /* PROBLEM */
+    .problem {
+      background: var(--bg2);
+      border-top: 1px solid rgba(29,143,255,0.08);
+      border-bottom: 1px solid rgba(29,143,255,0.08);
+    }
+    .problem-list { list-style: none; margin-bottom: 32px; }
+    .problem-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+    .problem-list li:last-child { border-bottom: none; }
+    .problem-list li::before {
+      content: '✕';
+      color: #ef4444;
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .solution-block {
+      padding: 24px;
+      background: linear-gradient(135deg, rgba(29,143,255,0.08), rgba(124,58,237,0.08));
+      border: 1px solid rgba(29,143,255,0.2);
+      border-radius: 8px;
+    }
+    .solution-block p {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.4rem, 5vw, 2rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .solution-block p span { color: var(--blue); }
+
+    /* SERVICES */
+    .services-intro {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin-bottom: 28px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 640px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .service-item {
+      padding: 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(29,143,255,0.12);
+      border-radius: 8px;
+    }
+    .service-item strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .service-item p { color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
+
+    /* PORTFOLIO */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 640px) { .portfolio-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .portfolio-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .portfolio-tagline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .portfolio-tagline span { color: var(--blue); }
+    .portfolio-micro {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .portfolio-card {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(29,143,255,0.15);
+      background: var(--bg2);
+      transition: all 0.25s;
+    }
+    .portfolio-card:hover {
+      border-color: rgba(29,143,255,0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 30px rgba(29,143,255,0.1);
+    }
+    .portfolio-card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      object-position: top;
+    }
+    .card-caption { padding: 14px 16px; }
+    .card-caption strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .card-caption p { font-size: 0.85rem; color: var(--muted); line-height: 1.4; }
+    .proof-list {
+      list-style: none;
+      display: grid;
+      gap: 7px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .proof-list li {
+      color: var(--text);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+    .proof-list span {
+      color: var(--blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .portfolio-more { text-align: center; }
+    .portfolio-more a {
+      color: var(--blue);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .portfolio-more a:hover { opacity: 1; }
+
+    /* OFFER */
+    .offer {
+      background: var(--bg2);
+      text-align: center;
+      border-top: 1px solid rgba(124,58,237,0.12);
+      border-bottom: 1px solid rgba(124,58,237,0.12);
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 28px 0 36px;
+      text-align: left;
+    }
+    @media (min-width: 480px) { .steps { grid-template-columns: 1fr 1fr 1fr; } }
+    .step {
+      padding: 20px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px;
+    }
+    .step-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: rgba(29,143,255,0.2);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .step p { font-size: 0.95rem; color: var(--text); font-weight: 500; }
+    .offer-subtext { color: var(--muted); margin-bottom: 28px; font-size: 1rem; }
+    .offer-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+      text-decoration: none;
+      padding: 20px 36px;
+      border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.3rem, 5vw, 1.7rem);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      box-shadow: 0 0 40px var(--blue-glow);
+      transition: all 0.2s;
+    }
+    .offer-cta:hover { box-shadow: 0 0 60px var(--blue-glow); transform: translateY(-2px); }
+
+    /* BIO */
+    .bio {
+      background: linear-gradient(135deg, rgba(29,143,255,0.07), rgba(124,58,237,0.06));
+      border-top: 1px solid rgba(29,143,255,0.1);
+      border-bottom: 1px solid rgba(124,58,237,0.1);
+    }
+    .bio-copy {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .bio-copy strong { color: var(--white); font-weight: 600; }
+
+    /* TRUST */
+    .trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 28px;
+    }
+    @media (min-width: 640px) { .trust-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    .trust-item {
+      padding: 20px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(29,143,255,0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+    .trust-icon { font-size: 1.6rem; margin-bottom: 8px; display: block; }
+    .trust-item strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .trust-item p { font-size: 0.78rem; color: var(--muted); line-height: 1.3; }
+
+    /* FINAL CTA */
+    .final-cta {
+      text-align: center;
+      padding: 80px 20px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(29,143,255,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 0%, rgba(124,58,237,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .final-cta h2 {
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 16px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .final-cta h2 em { font-style: normal; color: #ef4444; }
+    .final-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+      text-decoration: none;
+      padding: 22px 40px;
+      border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      box-shadow: 0 0 50px var(--blue-glow), 0 6px 30px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+      transition: all 0.2s;
+    }
+    .final-cta-btn:hover {
+      box-shadow: 0 0 80px var(--blue-glow), 0 6px 40px rgba(0,0,0,0.6);
+      transform: translateY(-3px);
+    }
+    .final-secondary { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .final-secondary a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.12);
+      transition: all 0.2s;
+    }
+    .final-secondary a:hover { background: rgba(255,255,255,0.09); border-color: rgba(255,255,255,0.25); }
+
+    /* FOOTER */
+    footer {
+      padding: 20px 20px 80px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    footer a { color: var(--blue); text-decoration: none; }
+
+    /* DESKTOP */
+    @media (min-width: 768px) {
+      nav { padding: 16px 40px; }
+      section { padding: 80px 40px; }
+      .hero { padding: 120px 60px 80px; justify-content: center; }
+    }
+    @media (max-width: 767px) {
+      body { padding-bottom: 78px; }
+      section { padding-bottom: 120px; }
+      .hero-cta-row { display: none; }
+      .hero-trust { margin-bottom: 8px; }
+      .nav-logo { font-size: clamp(1rem, 4vw, 1.25rem); }
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-content > * { animation: fadeUp 0.6s ease both; }
+    .hero-content > *:nth-child(1) { animation-delay: 0.1s; }
+    .hero-content > *:nth-child(2) { animation-delay: 0.2s; }
+    .hero-content > *:nth-child(3) { animation-delay: 0.3s; }
+    .hero-content > *:nth-child(4) { animation-delay: 0.35s; }
+    .hero-content > *:nth-child(5) { animation-delay: 0.4s; }
+    .hero-content > *:nth-child(6) { animation-delay: 0.45s; }
+    .hero-content > *:nth-child(7) { animation-delay: 0.5s; }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .js .reveal.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .hero-content > *,
+      .js .reveal {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="#"><span>Manic</span>webmaster</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="sticky-cta">
+    <a href="sms:4693687662" class="cta-text">
+      <span>💬</span>TEXT
+    </a>
+    <a href="tel:4693687662" class="cta-call">
+      <span>📞</span>CALL
+    </a>
+    <a href="mailto:matt@manicwebmaster.com" class="cta-email">
+      <span>✉️</span>EMAIL
+    </a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Freelance Web Developer — DFW</span>
+      <h1>What's your website<br>actually <em>doing</em><br>for you?</h1>
+      <p class="hero-sub">It should be bringing you customers.</p>
+      <p class="hero-sub">Most don't.</p>
+      <p class="hero-authority">I build ones that do.</p>
+      <a href="sms:4693687662" class="hero-cta-primary">💬 Text Me: (469) 368-7662</a>
+      <div class="hero-cta-row">
+        <a href="tel:4693687662" class="btn-secondary">📞 Call</a>
+        <a href="mailto:matt@manicwebmaster.com" class="btn-secondary">✉️ Email</a>
+      </div>
+      <p class="hero-trust">Usually reply within <strong>10 minutes</strong></p>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">The Problem</p>
+        <h2 class="section-title">Most websites<br>don't convert.</h2>
+        <div class="accent-line"></div>
+        <ul class="problem-list">
+          <li>Look fine, but never bring in real business</li>
+          <li>Slow, outdated, or confusing to navigate</li>
+          <li>Built without any conversion strategy</li>
+        </ul>
+        <div class="solution-block">
+          <p>That's where <span>I come in.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">What I Build</p>
+        <h2 class="section-title">The stuff your business<br>actually needs online.</h2>
+        <div class="accent-line"></div>
+        <p class="services-intro">I help local businesses look credible fast, explain what they do clearly, and give customers an easy next step.</p>
+        <div class="services-grid">
+          <div class="service-item">
+            <strong>Websites</strong>
+            <p>Clean, fast pages built around calls, texts, bookings, quotes, orders, and trust.</p>
+          </div>
+          <div class="service-item">
+            <strong>Landing Pages</strong>
+            <p>Focused one-page campaigns for ads, launches, service areas, and specific offers.</p>
+          </div>
+          <div class="service-item">
+            <strong>Branding</strong>
+            <p>Logo direction, colors, typography, and the visual system that makes you look legit.</p>
+          </div>
+          <div class="service-item">
+            <strong>Local Presence</strong>
+            <p>Messaging and page structure shaped for DFW customers who need a real answer quickly.</p>
+          </div>
+          <div class="service-item">
+            <strong>Cleanup &amp; Rebuilds</strong>
+            <p>Modernize slow, dated, confusing sites without losing what already works.</p>
+          </div>
+          <div class="service-item">
+            <strong>Ongoing Help</strong>
+            <p>Updates, small changes, new pages, and honest advice without agency runaround.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Visual Proof</p>
+        <h2 class="section-title">Here's the kind<br>of work I do.</h2>
+        <div class="accent-line"></div>
+        <p class="portfolio-tagline">Websites. Branding. <span>Built to bring in customers.</span></p>
+        <p class="portfolio-micro">Example builds for different businesses. Same goal — more calls, bookings, orders, and trust.</p>
+      </div>
+      <div class="portfolio-grid reveal">
+        <div class="portfolio-card">
+          <img src="restaurant.webp" alt="Restaurant website mockup — Ironwood Kitchen" loading="lazy" width="800" height="500">
+          <div class="card-caption">
+            <strong>Restaurant Website</strong>
+            <p>Built for online orders, reservations, and real traffic</p>
+            <ul class="proof-list">
+              <li><span>Goal:</span> Turn hungry visitors into customers</li>
+              <li><span>Path:</span> Menu, location, order, reserve</li>
+              <li><span>Feel:</span> Premium without feeling stiff</li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="hvac.webp" alt="HVAC service business website mockup" loading="lazy" width="800" height="500">
+          <div class="card-caption">
+            <strong>Service Business (HVAC)</strong>
+            <p>Built for calls, quotes, and consistent leads</p>
+            <ul class="proof-list">
+              <li><span>Goal:</span> Make emergency calls easy</li>
+              <li><span>Path:</span> Trust signals, services, call button</li>
+              <li><span>Feel:</span> Fast, reliable, local</li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="branding.webp" alt="Apex Performance branding and logo design mockup" loading="lazy" width="800" height="500">
+          <div class="card-caption">
+            <strong>Branding &amp; Logo Design</strong>
+            <p>Branding that makes your business look legit from day one</p>
+            <ul class="proof-list">
+              <li><span>Goal:</span> Create instant credibility</li>
+              <li><span>Path:</span> Logo, colors, type, usage direction</li>
+              <li><span>Feel:</span> Sharp, memorable, practical</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- PORTFOLIO MORE LINK — uncomment when portfolio expands
+      <div class="portfolio-more reveal">
+        <a href="mailto:matt@manicwebmaster.com">View more work →</a>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <section class="offer" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Zero Pressure</p>
+        <h2 class="section-title">Text me your idea.<br>I'll send you a concept.</h2>
+        <p class="offer-subtext">No long process. No pitch calls. No pressure.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <p>You text me what you're looking for</p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <p>I mock something up and send it back</p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <p>You decide if it's worth moving forward</p>
+          </div>
+        </div>
+        <a href="sms:4693687662" class="offer-cta">💬 Text Me: (469) 368-7662</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bio">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">The Human Part</p>
+        <h2 class="section-title">I'm Matt.<br>I build this stuff directly.</h2>
+        <div class="accent-line"></div>
+        <p class="bio-copy"><strong>ManicWebmaster is me, not a maze of account managers.</strong> You text the person thinking through the strategy, shaping the brand, and building the site. That keeps the work faster, clearer, and a lot less weird than the usual agency process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Why Me</p>
+        <h2 class="section-title">Local. Reliable.<br>Easy to work with.</h2>
+        <div class="accent-line"></div>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="trust-icon">📍</span>
+            <strong>Based in DFW</strong>
+            <p>I know this market. I'm not a faceless agency.</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">⚡</span>
+            <strong>Fast Comms</strong>
+            <p>Text me and get a real response. Not a ticket.</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🔗</span>
+            <strong>No Layers</strong>
+            <p>You work directly with the person building your site.</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🎯</span>
+            <strong>Honest Work</strong>
+            <p>I tell you what you actually need. Nothing more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <div class="reveal">
+        <h2>If your website isn't bringing you customers…<br>it's <em>costing you.</em></h2>
+        <br>
+        <a href="sms:4693687662" class="final-cta-btn">💬 Text Me: (469) 368-7662</a>
+        <div class="final-secondary">
+          <a href="tel:4693687662">📞 Call</a>
+          <a href="mailto:matt@manicwebmaster.com">✉️ Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 ManicWebmaster &nbsp;·&nbsp;
+      <a href="mailto:matt@manicwebmaster.com">matt@manicwebmaster.com</a>
+      &nbsp;·&nbsp;
+      <a href="tel:4693687662">(469) 368-7662</a>
+    </p>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        entries => entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        }),
+        { threshold: 0.1 }
+      );
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
