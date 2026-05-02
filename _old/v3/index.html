@@ -479,7 +479,6 @@
 
     .problem-grid,
     .services-grid,
-    .help-grid,
     .packages-grid,
     .work-grid,
     .poster-grid,
@@ -552,99 +551,6 @@
       transform: rotate(-22deg);
       box-shadow: 0 9px 0 var(--magenta), 0 -9px 0 rgba(255,255,255,0.28);
       opacity: 0.75;
-    }
-
-    .help-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .help-item {
-      position: relative;
-      min-height: 112px;
-      padding: 18px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background:
-        linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)),
-        #0b0f16;
-    }
-
-    .help-item b {
-      display: block;
-      color: var(--paper);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.22rem;
-      font-weight: 900;
-      letter-spacing: 0.04em;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-
-    .help-item p {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      line-height: 1.35;
-    }
-
-    .help-item::after {
-      content: '';
-      position: absolute;
-      right: 14px;
-      bottom: 14px;
-      width: 34px;
-      height: 2px;
-      background: var(--cyan);
-      box-shadow: 9px 6px 0 var(--magenta);
-      transform: rotate(-18deg);
-    }
-
-    .rebuild-band {
-      padding: 0;
-    }
-
-    .rebuild-panel {
-      position: relative;
-      display: grid;
-      gap: 18px;
-      overflow: hidden;
-      padding: 28px 24px;
-      border-radius: var(--radius);
-    }
-
-    .rebuild-panel::after {
-      content: 'OLD SITE / NEW PATH';
-      position: absolute;
-      right: -16px;
-      bottom: 18px;
-      color: rgba(7,8,11,0.08);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 4rem;
-      font-weight: 900;
-      line-height: 0.8;
-      transform: rotate(-7deg);
-    }
-
-    .rebuild-panel h2 {
-      position: relative;
-      max-width: 760px;
-      color: var(--ink);
-      font-size: clamp(2.5rem, 12vw, 5rem);
-      font-weight: 900;
-    }
-
-    .rebuild-panel p {
-      position: relative;
-      max-width: 680px;
-      color: #30343e;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    .rebuild-panel .btn {
-      position: relative;
-      width: max-content;
     }
 
     .packages {
@@ -849,36 +755,6 @@
       background: rgba(255,255,255,0.05);
       color: var(--paper-2);
       font-size: 0.92rem;
-    }
-
-    .faq-list {
-      display: grid;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .faq-item {
-      padding: 18px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,0.04);
-    }
-
-    .faq-item b {
-      display: block;
-      color: var(--paper);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.22rem;
-      font-weight: 900;
-      letter-spacing: 0.05em;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-
-    .faq-item p {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 0.95rem;
     }
 
     .offer {
@@ -1137,7 +1013,6 @@
 
       .problem-grid,
       .services-grid,
-      .help-grid,
       .packages-grid,
       .trust-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1184,7 +1059,6 @@
       }
 
       .poster-strip .container,
-      .rebuild-panel,
       .offer-shell,
       .final-panel {
         padding: 48px;
@@ -1208,10 +1082,6 @@
       .packages-grid,
       .work-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .help-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
       .hero-proof {
@@ -1253,19 +1123,6 @@
       .hero-copy {
         font-size: 1rem;
       }
-
-      .who-help .section-title {
-        font-size: clamp(2.75rem, 12.2vw, 4.2rem);
-      }
-
-      .final-panel {
-        background:
-          linear-gradient(90deg, rgba(12,16,24,0.72), rgba(12,16,24,0.93)),
-          url('poster-graffiti-mobile.jpg') center 42% / cover,
-          linear-gradient(135deg, rgba(0,169,255,0.22), transparent 36%),
-          linear-gradient(315deg, rgba(255,27,117,0.2), transparent 40%),
-          #0c1018;
-      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1285,7 +1142,7 @@
     <a class="nav-logo" href="#"><span>Manic</span>Webmaster</a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#packages">Scopes</a></li>
       <li><a href="#contact">Start</a></li>
     </ul>
   </nav>
@@ -1301,7 +1158,7 @@
       <div class="container hero-content">
         <p class="eyebrow">DFW freelance web + graphic design</p>
         <h1 class="hero-title">Websites, brands, and graphics that <span>pull</span> their weight.</h1>
-        <p class="hero-copy">Websites, landing pages, logos, and campaign graphics built to explain fast, look sharp, and turn visitors into calls, texts, orders, and leads.</p>
+        <p class="hero-copy">I build websites, landing pages, logos, and campaign graphics that look sharp, load fast, explain the offer clearly, and give customers a clean next step.</p>
         <div class="hero-actions">
           <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup." class="btn btn-primary">Text me your idea</a>
           <a href="mailto:matt@manicwebmaster.com" class="btn btn-ghost">Email the brief</a>
@@ -1352,15 +1209,6 @@
       </div>
     </section>
 
-    <section class="rebuild-band">
-      <div class="container rebuild-panel paper reveal">
-        <p class="eyebrow">Existing site cleanup</p>
-        <h2>Got an old site? Keep what works. Fix what does not.</h2>
-        <p>I can keep the parts already helping your business, cut the confusing stuff, and rebuild the customer path around faster pages, clearer calls to action, and better mobile flow.</p>
-        <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20have%20an%20existing%20site%20that%20needs%20cleanup%20or%20a%20rebuild." class="btn btn-dark">Text about a rebuild</a>
-      </div>
-    </section>
-
     <section class="services" id="services">
       <div class="container reveal">
         <p class="eyebrow">What I build</p>
@@ -1390,40 +1238,6 @@
           <article class="service-item">
             <b>Ongoing help</b>
             <p>Updates, new sections, quick graphics, small fixes, and honest advice when you need it.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="who-help">
-      <div class="container reveal">
-        <p class="eyebrow">Who I help</p>
-        <h2 class="section-title">Local businesses, new brands, and loud ideas.</h2>
-        <p class="section-lede">If you need people to understand what you offer and take the next step, I can help shape the page, brand, or graphic system around that.</p>
-        <div class="help-grid">
-          <article class="help-item">
-            <b>Restaurants</b>
-            <p>Menus, orders, reservations, location info, and promos.</p>
-          </article>
-          <article class="help-item">
-            <b>Service businesses</b>
-            <p>Trust signals, service pages, quotes, calls, and local leads.</p>
-          </article>
-          <article class="help-item">
-            <b>Fitness brands</b>
-            <p>Coaches, gyms, personal brands, programs, and launches.</p>
-          </article>
-          <article class="help-item">
-            <b>Local shops</b>
-            <p>Simple sites, offer pages, product highlights, and campaigns.</p>
-          </article>
-          <article class="help-item">
-            <b>Events + promos</b>
-            <p>Posters, social graphics, landing pages, and event pushes.</p>
-          </article>
-          <article class="help-item">
-            <b>New businesses</b>
-            <p>First impressions that feel real from day one.</p>
           </article>
         </div>
       </div>
@@ -1507,7 +1321,7 @@
           </article>
 
           <article class="work-card">
-            <img src="poster-blueprint.jpg" srcset="poster-blueprint-mobile.jpg 900w, poster-blueprint.jpg 1024w" sizes="(max-width: 767px) calc(100vw - 40px), 25vw" alt="ManicWebmaster blueprint-style poster design" loading="lazy" width="800" height="600">
+            <img src="poster-blueprint.jpg" alt="ManicWebmaster blueprint-style poster design" loading="lazy" width="800" height="600">
             <div class="work-copy">
               <b>Poster graphics</b>
               <p>Campaign visuals with grit, contrast, and a clear brand mark.</p>
@@ -1525,7 +1339,7 @@
     <section class="poster-proof">
       <div class="container poster-grid reveal">
         <div class="poster-frame">
-          <img src="poster-graffiti.jpg" srcset="poster-graffiti-mobile.jpg 900w, poster-graffiti.jpg 1024w" sizes="(max-width: 767px) calc(100vw - 40px), 40vw" alt="ManicWebmaster graffiti-style campaign poster">
+          <img src="poster-graffiti.jpg" alt="ManicWebmaster graffiti-style campaign poster">
         </div>
         <div class="poster-copy">
           <p class="eyebrow">Graphic design proof</p>
@@ -1566,7 +1380,7 @@
           </div>
           <div class="intent-grid" aria-label="Text Matt by project type">
             <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20website%20for%20my%20business.">Need a website</a>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20branding%20or%20a%20brand%20starter.">Need branding</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20logo%20or%20brand%20starter.">Need a logo</a>
             <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20posters%20or%20promo%20graphics.">Need graphics</a>
           </div>
           <div class="offer-actions">
@@ -1581,7 +1395,7 @@
       <div class="container reveal">
         <p class="eyebrow">The human part</p>
         <h2 class="section-title">I'm Matt. I build this stuff directly.</h2>
-        <p class="bio-copy"><strong>ManicWebmaster is me, not a maze of account managers.</strong> Every project starts with a text. No account manager. No ticket system. You talk to the person thinking through the strategy, shaping the brand, designing the graphics, and building the site.</p>
+        <p class="bio-copy"><strong>ManicWebmaster is me, not a maze of account managers.</strong> You text the person thinking through the strategy, shaping the brand, designing the graphics, and building the site. That keeps the work faster, clearer, and a lot less weird than the usual agency process.</p>
       </div>
     </section>
 
@@ -1610,35 +1424,6 @@
       </div>
     </section>
 
-    <section class="faq">
-      <div class="container reveal">
-        <p class="eyebrow">Quick answers</p>
-        <h2 class="section-title">A few things people usually ask first.</h2>
-        <div class="faq-list">
-          <article class="faq-item">
-            <b>How fast can you start?</b>
-            <p>Usually very fast. Text me what you need and I can tell you what the first move looks like.</p>
-          </article>
-          <article class="faq-item">
-            <b>Do you work outside DFW?</b>
-            <p>Yes. I am based in DFW, but I can work with businesses outside the area too.</p>
-          </article>
-          <article class="faq-item">
-            <b>Can you fix an existing site?</b>
-            <p>Yes. I can clean up, rebuild, or improve an existing site if there are parts worth keeping.</p>
-          </article>
-          <article class="faq-item">
-            <b>Do I own the files and design?</b>
-            <p>Yes. The files and design I make for you belong to you.</p>
-          </article>
-          <article class="faq-item">
-            <b>What should I text first?</b>
-            <p>Text however you feel most comfortable. A messy idea is fine. I can help shape it from there.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="final-cta">
       <div class="container">
         <div class="final-panel reveal">
@@ -1646,7 +1431,7 @@
           <p>Choose the closest path and send the messy version. I can turn it into the page, brand, or graphic system customers actually understand.</p>
           <div class="intent-grid" aria-label="Choose your project path">
             <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20website%20for%20my%20business.">Website</a>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20branding%20or%20a%20brand%20starter.">Branding</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20logo%20or%20brand%20starter.">Logo</a>
             <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20posters%20or%20promo%20graphics.">Graphics</a>
           </div>
           <div class="final-actions">
