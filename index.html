@@ -3,25 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DFW Freelance Web Developer & Branding | ManicWebmaster</title>
-  <meta name="description" content="DFW freelance web developer and branding help for local businesses that need websites, landing pages, logos, and conversion-focused customer flow.">
-  <meta name="theme-color" content="#04050d">
-  <meta property="og:title" content="ManicWebmaster | Websites, Branding, and Local Business Lead Flow">
-  <meta property="og:description" content="Text Matt your idea and get a no-pressure website or branding concept built around real customer action.">
+  <title>DFW Freelance Web Developer & Graphic Designer | ManicWebmaster</title>
+  <meta name="description" content="DFW freelance web development, graphic design, branding, landing pages, and conversion-focused websites for local businesses.">
+  <meta name="theme-color" content="#07080b">
+  <link rel="canonical" href="https://manicwebmaster.com/">
+  <meta property="og:title" content="ManicWebmaster | Websites, Branding, Graphics, and Local Business Lead Flow">
+  <meta property="og:description" content="Text Matt your idea and get a no-pressure website, branding, or graphic design concept built around real customer action.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="hero.webp">
+  <meta property="og:url" content="https://manicwebmaster.com/">
+  <meta property="og:site_name" content="ManicWebmaster">
+  <meta property="og:image" content="https://manicwebmaster.com/card.png">
+  <meta property="og:image:secure_url" content="https://manicwebmaster.com/card.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="ManicWebmaster freelance web development, branding, and graphic design for DFW businesses">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2304050d'/%3E%3Cpath d='M10 46V18h10l12 16 12-16h10v28H43V33L32 47 21 33v13H10z' fill='%231d8fff'/%3E%3C/svg%3E">
+  <meta name="twitter:title" content="ManicWebmaster | Websites, Branding, Graphics, and Local Business Lead Flow">
+  <meta name="twitter:description" content="Text Matt your idea and get a no-pressure website, branding, or graphic design concept built around real customer action.">
+  <meta name="twitter:image" content="https://manicwebmaster.com/card.png">
+  <meta name="twitter:image:alt" content="ManicWebmaster freelance web development, branding, and graphic design for DFW businesses">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2307080b'/%3E%3Cpath d='M9 47V17h10l13 17 13-17h10v30H43V32L32 47 21 32v15H9z' fill='%2300a9ff'/%3E%3C/svg%3E">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "ManicWebmaster",
-      "description": "Freelance web development and business branding for local businesses in the Dallas-Fort Worth area.",
+      "description": "Freelance web development, graphic design, and business branding for local businesses in the Dallas-Fort Worth area.",
       "areaServed": "Dallas-Fort Worth, Texas",
       "email": "matt@manicwebmaster.com",
       "telephone": "+1-469-368-7662",
@@ -35,6 +47,7 @@
         "Landing pages",
         "Business branding",
         "Logo design",
+        "Graphic design",
         "Local business website strategy"
       ]
     }
@@ -44,14 +57,23 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:          #04050d;
-      --bg2:         #080c1a;
-      --blue:        #1d8fff;
-      --blue-glow:   #1d8fff88;
-      --purple:      #7c3aed;
-      --text:        #e8eaf6;
-      --muted:       #7b8ab8;
-      --white:       #ffffff;
+      --ink: #07080b;
+      --ink-2: #0d1118;
+      --ink-3: #141926;
+      --paper: #f2efe7;
+      --paper-2: #d9d4c9;
+      --text: #f7f5ef;
+      --muted: #a9b2c8;
+      --muted-2: #6f7890;
+      --line: rgba(255,255,255,0.14);
+      --dark-line: rgba(7,8,11,0.18);
+      --cyan: #00a9ff;
+      --cyan-soft: rgba(0,169,255,0.18);
+      --magenta: #ff1b75;
+      --yellow: #ffd21a;
+      --radius: 8px;
+      --shadow: 0 24px 70px rgba(0,0,0,0.34);
+      --container: 1080px;
     }
 
     html {
@@ -60,616 +82,815 @@
     }
 
     body {
-      background: var(--bg);
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 88% 6%, rgba(0,169,255,0.22), transparent 26rem),
+        radial-gradient(circle at 6% 14%, rgba(255,27,117,0.12), transparent 19rem),
+        linear-gradient(180deg, #050608 0%, var(--ink) 38%, #0b0e14 100%);
       color: var(--text);
       font-family: 'Barlow', sans-serif;
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.55;
       overflow-x: hidden;
     }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), transparent 72%);
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.18;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 18% 20%, #ffffff 0 1px, transparent 2px),
+        radial-gradient(circle at 76% 16%, #ffffff 0 1px, transparent 2px),
+        radial-gradient(circle at 32% 74%, #ffffff 0 1px, transparent 2px),
+        radial-gradient(circle at 80% 82%, #ffffff 0 1px, transparent 2px);
+      background-size: 93px 117px;
+      mix-blend-mode: screen;
+    }
+
+    img { max-width: 100%; }
+
+    a { color: inherit; }
 
     h1, h2, h3 {
       font-family: 'Barlow Condensed', sans-serif;
       text-transform: uppercase;
+      line-height: 0.94;
       letter-spacing: 0.01em;
-      line-height: 1.05;
     }
 
-    /* NAV */
+    .container {
+      width: min(100% - 40px, var(--container));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--cyan);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 22px;
+      height: 2px;
+      background: currentColor;
+      box-shadow: 7px 7px 0 var(--magenta);
+    }
+
+    .section-title {
+      margin-top: 14px;
+      color: var(--text);
+      font-size: clamp(2.7rem, 13vw, 5.5rem);
+      font-weight: 900;
+      max-width: 760px;
+    }
+
+    .section-lede {
+      margin-top: 18px;
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .paper {
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.78), rgba(255,255,255,0) 38%),
+        var(--paper);
+      color: var(--ink);
+      border: 1px solid rgba(255,255,255,0.68);
+      box-shadow: var(--shadow);
+    }
+
+    .ink-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.065), rgba(255,255,255,0.025));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 45px rgba(0,0,0,0.22);
+    }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+
+    .btn-primary {
+      color: var(--ink);
+      background: var(--paper);
+      border-color: var(--paper);
+      box-shadow: 8px 8px 0 var(--cyan);
+    }
+
+    .btn-primary::after {
+      content: '';
+      width: 19px;
+      height: 2px;
+      background: var(--ink);
+      box-shadow: 8px 0 0 var(--ink);
+      transform: skewX(-20deg);
+    }
+
+    .btn-dark {
+      color: var(--paper);
+      background: var(--ink);
+      border-color: var(--ink);
+      box-shadow: 8px 8px 0 var(--cyan);
+    }
+
+    .btn-ghost {
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      border-color: var(--line);
+    }
+
+    .btn:hover {
+      transform: translate(-2px, -2px);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--yellow);
+      outline-offset: 4px;
+    }
+
     nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      inset: 0 0 auto;
       z-index: 900;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 20px;
-      background: rgba(4,5,13,0.85);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(29,143,255,0.12);
+      min-height: 68px;
+      padding: 14px 18px;
+      background: rgba(7,8,11,0.84);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(18px);
     }
+
     .nav-logo {
+      color: var(--text);
       font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.06rem, 4.5vw, 1.44rem);
       font-weight: 900;
-      font-size: 1.25rem;
-      text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--white);
+      line-height: 1;
       text-decoration: none;
+      text-transform: uppercase;
     }
-    .nav-logo span { color: var(--blue); }
-    .nav-links { display: flex; gap: clamp(12px, 3vw, 24px); list-style: none; }
+
+    .nav-logo span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(10px, 3vw, 26px);
+      list-style: none;
+    }
+
     .nav-links a {
       color: var(--muted);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(0.78rem, 2.8vw, 0.96rem);
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-decoration: none;
-      font-size: clamp(0.72rem, 2.4vw, 0.85rem);
-      font-weight: 600;
-      letter-spacing: 0.06em;
       text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--blue); }
-    a:focus-visible {
-      outline: 2px solid var(--blue);
-      outline-offset: 4px;
     }
 
-    /* STICKY MOBILE CTA */
+    .nav-links a:hover {
+      color: var(--paper);
+    }
+
     .sticky-cta {
       position: fixed;
-      bottom: 0; left: 0; right: 0;
+      inset: auto 0 0;
       z-index: 900;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background: rgba(4,5,13,0.95);
-      backdrop-filter: blur(16px);
-      border-top: 1px solid rgba(29,143,255,0.2);
-      padding: 8px 12px 12px;
+      grid-template-columns: 1.15fr 0.85fr 0.85fr;
       gap: 8px;
+      padding: 9px 10px 12px;
+      background: rgba(7,8,11,0.94);
+      border-top: 1px solid var(--line);
+      backdrop-filter: blur(18px);
     }
-    .sticky-cta a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3px;
-      padding: 8px 4px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: all 0.2s;
-    }
-    .sticky-cta .cta-text {
-      background: linear-gradient(135deg, var(--blue), var(--purple));
-      color: white;
-      box-shadow: 0 0 20px var(--blue-glow);
-    }
-    .sticky-cta .cta-call {
-      background: rgba(29,143,255,0.1);
-      color: var(--blue);
-      border: 1px solid rgba(29,143,255,0.3);
-    }
-    .sticky-cta .cta-email {
-      background: rgba(124,58,237,0.1);
-      color: #a78bfa;
-      border: 1px solid rgba(124,58,237,0.3);
-    }
-    .sticky-cta a:active { transform: scale(0.96); }
-    @media (min-width: 768px) { .sticky-cta { display: none; } }
 
-    /* HERO */
+    .sticky-cta a {
+      display: grid;
+      min-height: 54px;
+      place-items: center;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .sticky-cta a:first-child {
+      color: var(--ink);
+      background: var(--paper);
+      border-color: var(--paper);
+      box-shadow: 5px 5px 0 var(--cyan);
+    }
+
     .hero {
       position: relative;
       min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 80px 20px 150px;
+      display: grid;
+      align-items: end;
       overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('hero.webp');
-      background-size: cover;
-      background-position: center top;
-      filter: brightness(0.35) saturate(1.4);
-    }
-    .hero-glow {
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 20% 80%, rgba(29,143,255,0.18) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 50% at 80% 30%, rgba(124,58,237,0.15) 0%, transparent 60%),
-        linear-gradient(to top, rgba(4,5,13,0.9) 0%, rgba(4,5,13,0.3) 50%, rgba(4,5,13,0.5) 100%);
-    }
-    .hero-content { position: relative; z-index: 2; max-width: 480px; }
-
-    .hero-eyebrow {
-      display: inline-block;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--blue);
-      margin-bottom: 12px;
-      padding: 4px 10px;
-      border: 1px solid rgba(29,143,255,0.4);
-      border-radius: 2px;
-    }
-    .hero h1 {
-      font-size: clamp(2.8rem, 10vw, 5rem);
-      font-weight: 900;
-      color: var(--white);
-      margin-bottom: 8px;
-    }
-    .hero h1 em { font-style: normal; color: var(--blue); }
-    .hero-sub {
-      font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-      color: var(--muted);
-      margin-bottom: 6px;
-      font-weight: 500;
-    }
-    .hero-authority {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: clamp(1.2rem, 4vw, 1.6rem);
-      font-weight: 700;
-      color: var(--white);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 28px;
-    }
-    .hero-cta-primary {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: linear-gradient(135deg, var(--blue), var(--purple));
-      color: white;
-      text-decoration: none;
-      padding: 18px 28px;
-      border-radius: 6px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 900;
-      font-size: clamp(1.4rem, 5vw, 1.8rem);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      box-shadow: 0 0 40px var(--blue-glow), 0 4px 20px rgba(0,0,0,0.4);
-      margin-bottom: 12px;
-      transition: all 0.2s;
-      width: fit-content;
-    }
-    .hero-cta-primary:hover {
-      box-shadow: 0 0 60px var(--blue-glow), 0 4px 30px rgba(0,0,0,0.5);
-      transform: translateY(-2px);
-    }
-    .hero-cta-row { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
-    .btn-secondary {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      transition: all 0.2s;
-      background: rgba(255,255,255,0.06);
-      color: var(--text);
-      border: 1px solid rgba(255,255,255,0.15);
-    }
-    .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
-    .hero-trust {
-      font-size: 0.8rem;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .hero-trust::before { content: '⚡'; font-size: 0.9rem; }
-    .hero-trust strong { color: var(--blue); font-weight: 600; }
-
-    /* SECTIONS */
-    section {
-      padding: 64px 20px;
-      scroll-margin-top: 76px;
-    }
-    .container { max-width: 900px; margin: 0 auto; }
-    .section-label {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--blue);
-      margin-bottom: 12px;
-    }
-    .section-title {
-      font-size: clamp(2rem, 7vw, 3.2rem);
-      font-weight: 900;
-      color: var(--white);
-      margin-bottom: 24px;
-    }
-    .accent-line {
-      height: 3px;
-      width: 60px;
-      background: linear-gradient(90deg, var(--blue), var(--purple));
-      border-radius: 2px;
-      margin-bottom: 28px;
+      padding: 104px 0 118px;
     }
 
-    /* PROBLEM */
-    .problem {
-      background: var(--bg2);
-      border-top: 1px solid rgba(29,143,255,0.08);
-      border-bottom: 1px solid rgba(29,143,255,0.08);
-    }
-    .problem-list { list-style: none; margin-bottom: 32px; }
-    .problem-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 14px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      font-size: 1.05rem;
-      color: var(--muted);
-    }
-    .problem-list li:last-child { border-bottom: none; }
-    .problem-list li::before {
-      content: '✕';
-      color: #ef4444;
-      font-weight: 700;
-      font-size: 0.85rem;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .solution-block {
-      padding: 24px;
-      background: linear-gradient(135deg, rgba(29,143,255,0.08), rgba(124,58,237,0.08));
-      border: 1px solid rgba(29,143,255,0.2);
-      border-radius: 8px;
-    }
-    .solution-block p {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: clamp(1.4rem, 5vw, 2rem);
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--white);
-      letter-spacing: 0.02em;
-    }
-    .solution-block p span { color: var(--blue); }
-
-    /* SERVICES */
-    .services-intro {
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 620px;
-      margin-bottom: 28px;
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-    @media (min-width: 640px) { .services-grid { grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr 1fr; } }
-    .service-item {
-      padding: 18px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(29,143,255,0.12);
-      border-radius: 8px;
-    }
-    .service-item strong {
-      display: block;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--white);
-      margin-bottom: 6px;
-    }
-    .service-item p { color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
-
-    /* PORTFOLIO */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 28px;
-      margin-bottom: 24px;
-    }
-    @media (min-width: 640px) { .portfolio-grid { grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 900px) { .portfolio-grid { grid-template-columns: 1fr 1fr 1fr; } }
-    .portfolio-tagline {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: clamp(1.1rem, 3.5vw, 1.5rem);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--white);
-      margin-bottom: 6px;
-    }
-    .portfolio-tagline span { color: var(--blue); }
-    .portfolio-micro {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 28px;
-    }
-    .portfolio-card {
-      border-radius: 10px;
-      overflow: hidden;
-      border: 1px solid rgba(29,143,255,0.15);
-      background: var(--bg2);
-      transition: all 0.25s;
-    }
-    .portfolio-card:hover {
-      border-color: rgba(29,143,255,0.4);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 30px rgba(29,143,255,0.1);
-    }
-    .portfolio-card img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 16/10;
-      object-fit: cover;
-      object-position: top;
-    }
-    .card-caption { padding: 14px 16px; }
-    .card-caption strong {
-      display: block;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 1.05rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-    .card-caption p { font-size: 0.85rem; color: var(--muted); line-height: 1.4; }
-    .proof-list {
-      list-style: none;
-      display: grid;
-      gap: 7px;
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px solid rgba(255,255,255,0.07);
-    }
-    .proof-list li {
-      color: var(--text);
-      font-size: 0.78rem;
-      line-height: 1.35;
-    }
-    .proof-list span {
-      color: var(--blue);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    .portfolio-more { text-align: center; }
-    .portfolio-more a {
-      color: var(--blue);
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-decoration: none;
-      letter-spacing: 0.05em;
-      opacity: 0.7;
-      transition: opacity 0.2s;
-    }
-    .portfolio-more a:hover { opacity: 1; }
-
-    /* OFFER */
-    .offer {
-      background: var(--bg2);
-      text-align: center;
-      border-top: 1px solid rgba(124,58,237,0.12);
-      border-bottom: 1px solid rgba(124,58,237,0.12);
-    }
-    .steps {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin: 28px 0 36px;
-      text-align: left;
-    }
-    @media (min-width: 480px) { .steps { grid-template-columns: 1fr 1fr 1fr; } }
-    .step {
-      padding: 20px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 8px;
-    }
-    .step-num {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: rgba(29,143,255,0.2);
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-    .step p { font-size: 0.95rem; color: var(--text); font-weight: 500; }
-    .offer-subtext { color: var(--muted); margin-bottom: 28px; font-size: 1rem; }
-    .offer-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      background: linear-gradient(135deg, var(--blue), var(--purple));
-      color: white;
-      text-decoration: none;
-      padding: 20px 36px;
-      border-radius: 6px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 900;
-      font-size: clamp(1.3rem, 5vw, 1.7rem);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      box-shadow: 0 0 40px var(--blue-glow);
-      transition: all 0.2s;
-    }
-    .offer-cta:hover { box-shadow: 0 0 60px var(--blue-glow); transform: translateY(-2px); }
-
-    /* BIO */
-    .bio {
-      background: linear-gradient(135deg, rgba(29,143,255,0.07), rgba(124,58,237,0.06));
-      border-top: 1px solid rgba(29,143,255,0.1);
-      border-bottom: 1px solid rgba(124,58,237,0.1);
-    }
-    .bio-copy {
-      max-width: 720px;
-      color: var(--muted);
-      font-size: 1.08rem;
-    }
-    .bio-copy strong { color: var(--white); font-weight: 600; }
-
-    /* TRUST */
-    .trust-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 28px;
-    }
-    @media (min-width: 640px) { .trust-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
-    .trust-item {
-      padding: 20px 16px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(29,143,255,0.1);
-      border-radius: 8px;
-      text-align: center;
-    }
-    .trust-icon { font-size: 1.6rem; margin-bottom: 8px; display: block; }
-    .trust-item strong {
-      display: block;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-    .trust-item p { font-size: 0.78rem; color: var(--muted); line-height: 1.3; }
-
-    /* FINAL CTA */
-    .final-cta {
-      text-align: center;
-      padding: 80px 20px 100px;
-      position: relative;
-      overflow: hidden;
-    }
-    .final-cta::before {
+    .hero::before {
       content: '';
       position: absolute;
-      inset: 0;
+      inset: 64px -44% 0 8%;
       background:
-        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(29,143,255,0.12) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 40% at 80% 0%, rgba(124,58,237,0.1) 0%, transparent 60%);
-      pointer-events: none;
+        linear-gradient(90deg, rgba(7,8,11,0.75), rgba(7,8,11,0.18)),
+        url('hero.webp') center top / cover;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      filter: contrast(1.15) saturate(0.96) brightness(0.64);
+      opacity: 0.62;
+      transform: skewY(-4deg);
+      transform-origin: top left;
     }
-    .final-cta h2 {
-      font-size: clamp(1.8rem, 6vw, 3rem);
-      font-weight: 900;
-      color: var(--white);
-      margin-bottom: 16px;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .final-cta h2 em { font-style: normal; color: #ef4444; }
-    .final-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      background: linear-gradient(135deg, var(--blue), var(--purple));
-      color: white;
-      text-decoration: none;
-      padding: 22px 40px;
-      border-radius: 6px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 900;
-      font-size: clamp(1.5rem, 5vw, 2rem);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      box-shadow: 0 0 50px var(--blue-glow), 0 6px 30px rgba(0,0,0,0.5);
-      margin-bottom: 20px;
-      transition: all 0.2s;
-    }
-    .final-cta-btn:hover {
-      box-shadow: 0 0 80px var(--blue-glow), 0 6px 40px rgba(0,0,0,0.6);
-      transform: translateY(-3px);
-    }
-    .final-secondary { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-    .final-secondary a {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 22px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      background: rgba(255,255,255,0.05);
-      color: var(--text);
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: all 0.2s;
-    }
-    .final-secondary a:hover { background: rgba(255,255,255,0.09); border-color: rgba(255,255,255,0.25); }
 
-    /* FOOTER */
-    footer {
-      padding: 20px 20px 80px;
-      text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.05);
+    .hero::after {
+      content: 'M-01 / DFW / WEB + DESIGN';
+      position: absolute;
+      top: 86px;
+      right: 16px;
+      color: rgba(242,239,231,0.5);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      writing-mode: vertical-rl;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-title {
+      margin-top: 18px;
+      max-width: 760px;
+      color: var(--text);
+      font-size: clamp(4.15rem, 19vw, 8.4rem);
+      font-weight: 900;
+    }
+
+    .hero-title span {
+      color: var(--cyan);
+      text-shadow: 4px 4px 0 rgba(255,27,117,0.72);
+    }
+
+    .hero-copy {
+      max-width: 580px;
+      margin-top: 18px;
+      color: var(--paper-2);
+      font-size: clamp(1.04rem, 4.5vw, 1.34rem);
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-width: 480px;
+      margin-top: 32px;
+    }
+
+    .proof-chip {
+      padding: 13px 14px;
+      border-left: 2px solid var(--cyan);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .proof-chip strong {
+      display: block;
+      color: var(--paper);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .proof-chip span {
       color: var(--muted);
       font-size: 0.78rem;
     }
-    footer a { color: var(--blue); text-decoration: none; }
 
-    /* DESKTOP */
-    @media (min-width: 768px) {
-      nav { padding: 16px 40px; }
-      section { padding: 80px 40px; }
-      .hero { padding: 120px 60px 80px; justify-content: center; }
-    }
-    @media (max-width: 767px) {
-      body { padding-bottom: 78px; }
-      section { padding-bottom: 120px; }
-      .hero-cta-row { display: none; }
-      .hero-trust { margin-bottom: 8px; }
-      .nav-logo { font-size: clamp(1rem, 4vw, 1.25rem); }
+    section {
+      position: relative;
+      padding: 76px 0;
+      scroll-margin-top: 78px;
     }
 
-    /* ANIMATIONS */
+    .poster-strip {
+      padding: 0;
+    }
+
+    .poster-strip .container {
+      position: relative;
+      display: grid;
+      gap: 18px;
+      padding: 28px 24px;
+      overflow: hidden;
+      border-radius: var(--radius);
+    }
+
+    .poster-strip .container::before {
+      content: '';
+      position: absolute;
+      inset: -45px -20px auto auto;
+      width: 190px;
+      height: 100px;
+      background:
+        linear-gradient(135deg, transparent 0 34%, var(--cyan) 35% 45%, transparent 46%),
+        linear-gradient(20deg, transparent 0 30%, var(--magenta) 31% 39%, transparent 40%);
+      opacity: 0.82;
+      transform: rotate(-12deg);
+    }
+
+    .poster-strip h2 {
+      position: relative;
+      max-width: 620px;
+      font-size: clamp(2.55rem, 12vw, 5rem);
+      font-weight: 900;
+      color: var(--ink);
+    }
+
+    .poster-strip p {
+      position: relative;
+      max-width: 620px;
+      color: #2a2d35;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .problem-grid,
+    .services-grid,
+    .work-grid,
+    .trust-grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .problem-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.035);
+    }
+
+    .problem-card b,
+    .service-item b,
+    .trust-item b {
+      display: block;
+      color: var(--paper);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .problem-card p,
+    .service-item p,
+    .trust-item p {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .number {
+      display: inline-flex;
+      margin-bottom: 18px;
+      color: var(--cyan);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+    }
+
+    .services {
+      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0));
+    }
+
+    .service-item {
+      position: relative;
+      min-height: 154px;
+      padding: 20px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .service-item::after {
+      content: '';
+      position: absolute;
+      right: -26px;
+      bottom: 18px;
+      width: 92px;
+      height: 2px;
+      background: var(--cyan);
+      transform: rotate(-22deg);
+      box-shadow: 0 9px 0 var(--magenta), 0 -9px 0 rgba(255,255,255,0.28);
+      opacity: 0.75;
+    }
+
+    .work {
+      background:
+        linear-gradient(180deg, rgba(242,239,231,0.06), transparent 30%),
+        var(--ink);
+    }
+
+    .work-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #0d1118;
+    }
+
+    .work-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      object-position: top;
+      filter: saturate(0.92) contrast(1.08);
+    }
+
+    .work-copy {
+      padding: 18px;
+    }
+
+    .work-copy b {
+      display: block;
+      color: var(--paper);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.28rem;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .work-copy p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .work-list {
+      display: grid;
+      gap: 7px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      list-style: none;
+    }
+
+    .work-list li {
+      color: var(--paper-2);
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+
+    .work-list span {
+      color: var(--cyan);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .offer {
+      color: var(--ink);
+    }
+
+    .offer-shell {
+      position: relative;
+      overflow: hidden;
+      padding: 32px 24px;
+      border-radius: var(--radius);
+    }
+
+    .offer-shell::after {
+      content: 'TEXT FIRST';
+      position: absolute;
+      right: -20px;
+      bottom: 18px;
+      color: rgba(7,8,11,0.08);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 5rem;
+      font-weight: 900;
+      line-height: 0.8;
+      transform: rotate(-8deg);
+    }
+
+    .offer .eyebrow,
+    .offer .section-title {
+      color: var(--ink);
+    }
+
+    .offer .section-lede {
+      color: #30343e;
+    }
+
+    .steps {
+      position: relative;
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .step {
+      padding: 16px;
+      border: 1px solid var(--dark-line);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.42);
+    }
+
+    .step span {
+      color: var(--magenta);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .step p {
+      margin-top: 8px;
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .offer-actions {
+      position: relative;
+      display: grid;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .bio-copy {
+      margin-top: 22px;
+      max-width: 740px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .bio-copy strong {
+      color: var(--paper);
+    }
+
+    .trust-item {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.035);
+    }
+
+    .final-cta {
+      padding-bottom: 126px;
+    }
+
+    .final-panel {
+      position: relative;
+      overflow: hidden;
+      padding: 30px 24px;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(0,169,255,0.22), transparent 36%),
+        linear-gradient(315deg, rgba(255,27,117,0.2), transparent 40%),
+        #0c1018;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .final-panel::before {
+      content: '';
+      position: absolute;
+      inset: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      pointer-events: none;
+    }
+
+    .final-panel h2 {
+      position: relative;
+      max-width: 790px;
+      color: var(--paper);
+      font-size: clamp(2.6rem, 12vw, 5.4rem);
+      font-weight: 900;
+    }
+
+    .final-panel h2 span {
+      color: var(--yellow);
+    }
+
+    .final-panel p {
+      position: relative;
+      max-width: 580px;
+      margin-top: 14px;
+      color: var(--paper-2);
+    }
+
+    .final-actions {
+      position: relative;
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    footer {
+      padding: 24px 20px 94px;
+      color: var(--muted-2);
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .hero-content > * { animation: fadeUp 0.6s ease both; }
-    .hero-content > *:nth-child(1) { animation-delay: 0.1s; }
-    .hero-content > *:nth-child(2) { animation-delay: 0.2s; }
-    .hero-content > *:nth-child(3) { animation-delay: 0.3s; }
-    .hero-content > *:nth-child(4) { animation-delay: 0.35s; }
-    .hero-content > *:nth-child(5) { animation-delay: 0.4s; }
-    .hero-content > *:nth-child(6) { animation-delay: 0.45s; }
-    .hero-content > *:nth-child(7) { animation-delay: 0.5s; }
+
+    .hero-content > * {
+      animation: fadeUp 0.65s ease both;
+    }
+
+    .hero-content > *:nth-child(2) { animation-delay: 0.08s; }
+    .hero-content > *:nth-child(3) { animation-delay: 0.16s; }
+    .hero-content > *:nth-child(4) { animation-delay: 0.24s; }
+    .hero-content > *:nth-child(5) { animation-delay: 0.32s; }
 
     .reveal {
       opacity: 1;
       transform: none;
     }
+
     .js .reveal {
       opacity: 0;
-      transform: translateY(24px);
+      transform: translateY(22px);
       transition: opacity 0.55s ease, transform 0.55s ease;
     }
-    .js .reveal.visible { opacity: 1; transform: none; }
+
+    .js .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (min-width: 560px) {
+      .hero-actions,
+      .offer-actions,
+      .final-actions {
+        grid-template-columns: max-content max-content;
+      }
+
+      .problem-grid,
+      .services-grid,
+      .trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .steps {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 768px) {
+      body { padding-bottom: 0; }
+
+      nav {
+        min-height: 74px;
+        padding: 18px 40px;
+      }
+
+      .sticky-cta {
+        display: none;
+      }
+
+      .hero {
+        min-height: 94svh;
+        padding: 126px 0 90px;
+        align-items: center;
+      }
+
+      .hero::before {
+        inset: 74px -12% 8% 36%;
+        border-radius: 0 0 0 18px;
+      }
+
+      .hero-actions {
+        margin-top: 34px;
+      }
+
+      section {
+        padding: 96px 0;
+      }
+
+      .poster-strip .container,
+      .offer-shell,
+      .final-panel {
+        padding: 48px;
+      }
+
+      .work-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 980px) {
+      .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .hero-proof {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        max-width: 720px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        padding-bottom: 78px;
+      }
+
+      .hero {
+        padding-bottom: 154px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .hero-actions {
+        display: none;
+      }
+
+      .hero-proof {
+        display: none;
+      }
+
+      .section-title,
+      .hero-title {
+        overflow-wrap: anywhere;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .hero-content > *,
@@ -683,237 +904,243 @@
   </style>
 </head>
 <body>
-
   <nav>
-    <a class="nav-logo" href="#"><span>Manic</span>webmaster</a>
+    <a class="nav-logo" href="#"><span>Manic</span>Webmaster</a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="sticky-cta">
-    <a href="sms:4693687662" class="cta-text">
-      <span>💬</span>TEXT
-    </a>
-    <a href="tel:4693687662" class="cta-call">
-      <span>📞</span>CALL
-    </a>
-    <a href="mailto:matt@manicwebmaster.com" class="cta-email">
-      <span>✉️</span>EMAIL
-    </a>
+  <div class="sticky-cta" aria-label="Contact Matt">
+    <a href="sms:4693687662">Text Matt</a>
+    <a href="tel:4693687662">Call</a>
+    <a href="mailto:matt@manicwebmaster.com">Email</a>
   </div>
 
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-content">
-      <span class="hero-eyebrow">Freelance Web Developer — DFW</span>
-      <h1>What's your website<br>actually <em>doing</em><br>for you?</h1>
-      <p class="hero-sub">It should be bringing you customers.</p>
-      <p class="hero-sub">Most don't.</p>
-      <p class="hero-authority">I build ones that do.</p>
-      <a href="sms:4693687662" class="hero-cta-primary">💬 Text Me: (469) 368-7662</a>
-      <div class="hero-cta-row">
-        <a href="tel:4693687662" class="btn-secondary">📞 Call</a>
-        <a href="mailto:matt@manicwebmaster.com" class="btn-secondary">✉️ Email</a>
-      </div>
-      <p class="hero-trust">Usually reply within <strong>10 minutes</strong></p>
-    </div>
-  </section>
-
-  <section class="problem">
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">The Problem</p>
-        <h2 class="section-title">Most websites<br>don't convert.</h2>
-        <div class="accent-line"></div>
-        <ul class="problem-list">
-          <li>Look fine, but never bring in real business</li>
-          <li>Slow, outdated, or confusing to navigate</li>
-          <li>Built without any conversion strategy</li>
-        </ul>
-        <div class="solution-block">
-          <p>That's where <span>I come in.</span></p>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">DFW freelance web + graphic design</p>
+        <h1 class="hero-title">Make the page <span>pull</span> its weight.</h1>
+        <p class="hero-copy">I build websites, landing pages, logos, and campaign graphics that look sharp, explain the offer fast, and give real customers a clean next step.</p>
+        <div class="hero-actions">
+          <a href="sms:4693687662" class="btn btn-primary">Text me your idea</a>
+          <a href="mailto:matt@manicwebmaster.com" class="btn btn-ghost">Email the brief</a>
+        </div>
+        <div class="hero-proof" aria-label="ManicWebmaster strengths">
+          <div class="proof-chip">
+            <strong>Direct</strong>
+            <span>You work with Matt</span>
+          </div>
+          <div class="proof-chip">
+            <strong>Local</strong>
+            <span>DFW business focus</span>
+          </div>
+          <div class="proof-chip">
+            <strong>Fast</strong>
+            <span>Text-first process</span>
+          </div>
+          <div class="proof-chip">
+            <strong>Built</strong>
+            <span>For calls and leads</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="services">
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">What I Build</p>
-        <h2 class="section-title">The stuff your business<br>actually needs online.</h2>
-        <div class="accent-line"></div>
-        <p class="services-intro">I help local businesses look credible fast, explain what they do clearly, and give customers an easy next step.</p>
+    <section class="poster-strip">
+      <div class="container paper reveal">
+        <p class="eyebrow">The new direction</p>
+        <h2>Dark energy. Clean thinking.</h2>
+        <p>The feel is still Manic: rough marks, high contrast, blueprint lines, and bright paint. The layout gets calmer, clearer, and more mobile-first so the offer lands before the noise does.</p>
+      </div>
+    </section>
+
+    <section class="problem">
+      <div class="container reveal">
+        <p class="eyebrow">The problem</p>
+        <h2 class="section-title">Most sites look fine. Then nothing happens.</h2>
+        <p class="section-lede">A business page needs more than a decent screenshot. It has to answer fast, build trust, and make the next move obvious.</p>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <span class="number">01</span>
+            <b>No clear path</b>
+            <p>Visitors should know what you do, why it matters, and how to contact you without hunting.</p>
+          </article>
+          <article class="problem-card">
+            <span class="number">02</span>
+            <b>Weak trust signals</b>
+            <p>The site should make a local customer feel like they found a real, capable business.</p>
+          </article>
+          <article class="problem-card">
+            <span class="number">03</span>
+            <b>Pretty but passive</b>
+            <p>Design has to move people toward calls, texts, bookings, orders, quotes, or inquiries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container reveal">
+        <p class="eyebrow">What I build</p>
+        <h2 class="section-title">Web work and graphics with a job to do.</h2>
+        <p class="section-lede">Useful, sharp-looking pieces for small businesses that need credibility and customer action without agency layers.</p>
         <div class="services-grid">
-          <div class="service-item">
-            <strong>Websites</strong>
-            <p>Clean, fast pages built around calls, texts, bookings, quotes, orders, and trust.</p>
-          </div>
-          <div class="service-item">
-            <strong>Landing Pages</strong>
-            <p>Focused one-page campaigns for ads, launches, service areas, and specific offers.</p>
-          </div>
-          <div class="service-item">
-            <strong>Branding</strong>
-            <p>Logo direction, colors, typography, and the visual system that makes you look legit.</p>
-          </div>
-          <div class="service-item">
-            <strong>Local Presence</strong>
-            <p>Messaging and page structure shaped for DFW customers who need a real answer quickly.</p>
-          </div>
-          <div class="service-item">
-            <strong>Cleanup &amp; Rebuilds</strong>
-            <p>Modernize slow, dated, confusing sites without losing what already works.</p>
-          </div>
-          <div class="service-item">
-            <strong>Ongoing Help</strong>
-            <p>Updates, small changes, new pages, and honest advice without agency runaround.</p>
-          </div>
+          <article class="service-item">
+            <b>Websites</b>
+            <p>Clean, fast pages shaped around calls, texts, bookings, orders, quote requests, and trust.</p>
+          </article>
+          <article class="service-item">
+            <b>Landing pages</b>
+            <p>Focused pages for ads, service areas, launches, specials, and one-off campaigns.</p>
+          </article>
+          <article class="service-item">
+            <b>Brand systems</b>
+            <p>Logo direction, colors, typography, and practical rules that keep the business looking legit.</p>
+          </article>
+          <article class="service-item">
+            <b>Graphic design</b>
+            <p>Posters, social graphics, promo pieces, and visual assets with the same sharp brand language.</p>
+          </article>
+          <article class="service-item">
+            <b>Rebuilds</b>
+            <p>Clean up old, slow, confusing sites and keep the parts that already work.</p>
+          </article>
+          <article class="service-item">
+            <b>Ongoing help</b>
+            <p>Updates, new sections, quick graphics, small fixes, and honest advice when you need it.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="portfolio">
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">Visual Proof</p>
-        <h2 class="section-title">Here's the kind<br>of work I do.</h2>
-        <div class="accent-line"></div>
-        <p class="portfolio-tagline">Websites. Branding. <span>Built to bring in customers.</span></p>
-        <p class="portfolio-micro">Example builds for different businesses. Same goal — more calls, bookings, orders, and trust.</p>
-      </div>
-      <div class="portfolio-grid reveal">
-        <div class="portfolio-card">
-          <img src="restaurant.webp" alt="Restaurant website mockup — Ironwood Kitchen" loading="lazy" width="800" height="500">
-          <div class="card-caption">
-            <strong>Restaurant Website</strong>
-            <p>Built for online orders, reservations, and real traffic</p>
-            <ul class="proof-list">
-              <li><span>Goal:</span> Turn hungry visitors into customers</li>
-              <li><span>Path:</span> Menu, location, order, reserve</li>
-              <li><span>Feel:</span> Premium without feeling stiff</li>
-            </ul>
-          </div>
+    <section class="work" id="work">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">Visual proof</p>
+          <h2 class="section-title">Different businesses. Same mission.</h2>
+          <p class="section-lede">The work should feel custom, but the strategy stays steady: make the customer understand, trust, and act.</p>
         </div>
-        <div class="portfolio-card">
-          <img src="hvac.webp" alt="HVAC service business website mockup" loading="lazy" width="800" height="500">
-          <div class="card-caption">
-            <strong>Service Business (HVAC)</strong>
-            <p>Built for calls, quotes, and consistent leads</p>
-            <ul class="proof-list">
-              <li><span>Goal:</span> Make emergency calls easy</li>
-              <li><span>Path:</span> Trust signals, services, call button</li>
-              <li><span>Feel:</span> Fast, reliable, local</li>
-            </ul>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <img src="branding.webp" alt="Apex Performance branding and logo design mockup" loading="lazy" width="800" height="500">
-          <div class="card-caption">
-            <strong>Branding &amp; Logo Design</strong>
-            <p>Branding that makes your business look legit from day one</p>
-            <ul class="proof-list">
-              <li><span>Goal:</span> Create instant credibility</li>
-              <li><span>Path:</span> Logo, colors, type, usage direction</li>
-              <li><span>Feel:</span> Sharp, memorable, practical</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO MORE LINK — uncomment when portfolio expands
-      <div class="portfolio-more reveal">
-        <a href="mailto:matt@manicwebmaster.com">View more work →</a>
-      </div>
-      -->
-    </div>
-  </section>
+        <div class="work-grid reveal">
+          <article class="work-card">
+            <img src="restaurant.webp" alt="Restaurant website mockup for Ironwood Kitchen" loading="lazy" width="800" height="600">
+            <div class="work-copy">
+              <b>Restaurant site</b>
+              <p>Built for online orders, reservations, and real traffic.</p>
+              <ul class="work-list">
+                <li><span>Goal:</span> Turn hungry visitors into customers</li>
+                <li><span>Path:</span> Menu, location, order, reserve</li>
+                <li><span>Feel:</span> Premium without feeling stiff</li>
+              </ul>
+            </div>
+          </article>
 
-  <section class="offer" id="contact">
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">Zero Pressure</p>
-        <h2 class="section-title">Text me your idea.<br>I'll send you a concept.</h2>
-        <p class="offer-subtext">No long process. No pitch calls. No pressure.</p>
-        <div class="steps">
-          <div class="step">
-            <div class="step-num">01</div>
-            <p>You text me what you're looking for</p>
+          <article class="work-card">
+            <img src="hvac.webp" alt="HVAC service business website mockup" loading="lazy" width="800" height="600">
+            <div class="work-copy">
+              <b>Service business</b>
+              <p>Built for calls, quotes, and consistent local leads.</p>
+              <ul class="work-list">
+                <li><span>Goal:</span> Make emergency calls easy</li>
+                <li><span>Path:</span> Trust signals, services, call button</li>
+                <li><span>Feel:</span> Fast, reliable, local</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img src="branding.webp" alt="Apex Performance branding and logo design mockup" loading="lazy" width="800" height="600">
+            <div class="work-copy">
+              <b>Branding package</b>
+              <p>Identity work that makes a business look serious from day one.</p>
+              <ul class="work-list">
+                <li><span>Goal:</span> Create instant credibility</li>
+                <li><span>Path:</span> Logo, colors, type, usage direction</li>
+                <li><span>Feel:</span> Sharp, memorable, practical</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="contact">
+      <div class="container">
+        <div class="offer-shell paper reveal">
+          <p class="eyebrow">Zero pressure</p>
+          <h2 class="section-title">Text me your idea. I'll send a concept.</h2>
+          <p class="section-lede">No long discovery maze. No pitch-call theater. Just a quick read on what you need and a direction you can react to.</p>
+          <div class="steps">
+            <div class="step">
+              <span>01</span>
+              <p>You send the business, offer, or rough idea.</p>
+            </div>
+            <div class="step">
+              <span>02</span>
+              <p>I shape a visual and strategy direction.</p>
+            </div>
+            <div class="step">
+              <span>03</span>
+              <p>You decide if it is worth building out.</p>
+            </div>
           </div>
-          <div class="step">
-            <div class="step-num">02</div>
-            <p>I mock something up and send it back</p>
-          </div>
-          <div class="step">
-            <div class="step-num">03</div>
-            <p>You decide if it's worth moving forward</p>
+          <div class="offer-actions">
+            <a href="sms:4693687662" class="btn btn-dark">Text (469) 368-7662</a>
+            <a href="tel:4693687662" class="btn btn-ghost">Call Matt</a>
           </div>
         </div>
-        <a href="sms:4693687662" class="offer-cta">💬 Text Me: (469) 368-7662</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="bio">
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">The Human Part</p>
-        <h2 class="section-title">I'm Matt.<br>I build this stuff directly.</h2>
-        <div class="accent-line"></div>
-        <p class="bio-copy"><strong>ManicWebmaster is me, not a maze of account managers.</strong> You text the person thinking through the strategy, shaping the brand, and building the site. That keeps the work faster, clearer, and a lot less weird than the usual agency process.</p>
+    <section class="bio">
+      <div class="container reveal">
+        <p class="eyebrow">The human part</p>
+        <h2 class="section-title">I'm Matt. I build this stuff directly.</h2>
+        <p class="bio-copy"><strong>ManicWebmaster is me, not a maze of account managers.</strong> You text the person thinking through the strategy, shaping the brand, designing the graphics, and building the site. That keeps the work faster, clearer, and a lot less weird than the usual agency process.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">Why Me</p>
-        <h2 class="section-title">Local. Reliable.<br>Easy to work with.</h2>
-        <div class="accent-line"></div>
+    <section class="trust">
+      <div class="container reveal">
+        <p class="eyebrow">Why it works</p>
+        <h2 class="section-title">Local. Sharp. Easy to work with.</h2>
         <div class="trust-grid">
-          <div class="trust-item">
-            <span class="trust-icon">📍</span>
-            <strong>Based in DFW</strong>
-            <p>I know this market. I'm not a faceless agency.</p>
-          </div>
-          <div class="trust-item">
-            <span class="trust-icon">⚡</span>
-            <strong>Fast Comms</strong>
-            <p>Text me and get a real response. Not a ticket.</p>
-          </div>
-          <div class="trust-item">
-            <span class="trust-icon">🔗</span>
-            <strong>No Layers</strong>
-            <p>You work directly with the person building your site.</p>
-          </div>
-          <div class="trust-item">
-            <span class="trust-icon">🎯</span>
-            <strong>Honest Work</strong>
-            <p>I tell you what you actually need. Nothing more.</p>
-          </div>
+          <article class="trust-item">
+            <b>DFW based</b>
+            <p>I know the local-business lane and the way people look for help around here.</p>
+          </article>
+          <article class="trust-item">
+            <b>Fast comms</b>
+            <p>Text me and get a real response from the person doing the work.</p>
+          </article>
+          <article class="trust-item">
+            <b>No layers</b>
+            <p>No handoff chain. No vague tickets. Just direct collaboration.</p>
+          </article>
+          <article class="trust-item">
+            <b>Honest scope</b>
+            <p>I tell you what you actually need and what can wait.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="final-cta">
-    <div class="container">
-      <div class="reveal">
-        <h2>If your website isn't bringing you customers…<br>it's <em>costing you.</em></h2>
-        <br>
-        <a href="sms:4693687662" class="final-cta-btn">💬 Text Me: (469) 368-7662</a>
-        <div class="final-secondary">
-          <a href="tel:4693687662">📞 Call</a>
-          <a href="mailto:matt@manicwebmaster.com">✉️ Email</a>
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-panel reveal">
+          <h2>Your website should not just exist. It should <span>work.</span></h2>
+          <p>Send me the messy version of the idea. I can help turn it into the page, brand, or graphic system customers actually understand.</p>
+          <div class="final-actions">
+            <a href="sms:4693687662" class="btn btn-primary">Text me your idea</a>
+            <a href="mailto:matt@manicwebmaster.com" class="btn btn-ghost">matt@manicwebmaster.com</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <p>© 2026 ManicWebmaster &nbsp;·&nbsp;
@@ -930,7 +1157,7 @@
         entries => entries.forEach(e => {
           if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
         }),
-        { threshold: 0.1 }
+        { threshold: 0.02 }
       );
       revealEls.forEach(el => io.observe(el));
     } else {
