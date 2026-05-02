@@ -6,24 +6,22 @@
   <title>DFW Freelance Web Developer & Graphic Designer | ManicWebmaster</title>
   <meta name="description" content="DFW freelance web development, graphic design, branding, landing pages, and conversion-focused websites for local businesses.">
   <meta name="theme-color" content="#07080b">
-  <meta name="version" content="3">
   <link rel="canonical" href="https://manicwebmaster.com/">
-  <link rel="preload" as="image" href="hero.webp" fetchpriority="high">
   <meta property="og:title" content="ManicWebmaster | Websites, Branding, Graphics, and Local Business Lead Flow">
   <meta property="og:description" content="Text Matt your idea and get a no-pressure website, branding, or graphic design concept built around real customer action.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://manicwebmaster.com/">
   <meta property="og:site_name" content="ManicWebmaster">
-  <meta property="og:image" content="https://manicwebmaster.com/card.jpg">
-  <meta property="og:image:secure_url" content="https://manicwebmaster.com/card.jpg">
-  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image" content="https://manicwebmaster.com/card.png">
+  <meta property="og:image:secure_url" content="https://manicwebmaster.com/card.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1536">
   <meta property="og:image:height" content="1024">
   <meta property="og:image:alt" content="ManicWebmaster freelance web development, branding, and graphic design for DFW businesses">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ManicWebmaster | Websites, Branding, Graphics, and Local Business Lead Flow">
   <meta name="twitter:description" content="Text Matt your idea and get a no-pressure website, branding, or graphic design concept built around real customer action.">
-  <meta name="twitter:image" content="https://manicwebmaster.com/card.jpg">
+  <meta name="twitter:image" content="https://manicwebmaster.com/card.png">
   <meta name="twitter:image:alt" content="ManicWebmaster freelance web development, branding, and graphic design for DFW businesses">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2307080b'/%3E%3Cpath d='M9 47V17h10l13 17 13-17h10v30H43V32L32 47 21 32v15H9z' fill='%2300a9ff'/%3E%3C/svg%3E">
   <script>document.documentElement.classList.add('js');</script>
@@ -304,7 +302,7 @@
       inset: auto 0 0;
       z-index: 900;
       display: grid;
-      grid-template-columns: 1.4fr 1fr;
+      grid-template-columns: 1.15fr 0.85fr 0.85fr;
       gap: 8px;
       padding: 9px 10px 12px;
       background: rgba(7,8,11,0.94);
@@ -481,6 +479,7 @@
 
     .problem-grid,
     .services-grid,
+    .help-grid,
     .packages-grid,
     .work-grid,
     .poster-grid,
@@ -553,6 +552,52 @@
       transform: rotate(-22deg);
       box-shadow: 0 9px 0 var(--magenta), 0 -9px 0 rgba(255,255,255,0.28);
       opacity: 0.75;
+    }
+
+    .help-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .help-item {
+      position: relative;
+      min-height: 112px;
+      padding: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)),
+        #0b0f16;
+    }
+
+    .help-item b {
+      display: block;
+      color: var(--paper);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.22rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .help-item p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.35;
+    }
+
+    .help-item::after {
+      content: '';
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 34px;
+      height: 2px;
+      background: var(--cyan);
+      box-shadow: 9px 6px 0 var(--magenta);
+      transform: rotate(-18deg);
     }
 
     .rebuild-band {
@@ -644,16 +689,6 @@
     .package-card p {
       color: var(--muted);
       font-size: 0.94rem;
-    }
-
-    .package-card .price-anchor {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      margin: 8px 0 14px;
     }
 
     .package-card a {
@@ -913,38 +948,6 @@
       font-weight: 600;
     }
 
-    .timeline {
-      margin: 24px 0;
-      padding: 20px 24px;
-      border-left: 3px solid var(--cyan);
-      background: rgba(0,169,255,0.06);
-      border-radius: 0 8px 8px 0;
-    }
-
-    .timeline ul {
-      list-style: none;
-      display: grid;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .timeline li {
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .timeline strong {
-      color: var(--cyan);
-      font-family: 'Barlow Condensed', sans-serif;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-right: 8px;
-    }
-
-    .offer .timeline li {
-      color: var(--ink);
-    }
-
     .text-prompt {
       position: relative;
       margin-top: 18px;
@@ -1134,6 +1137,7 @@
 
       .problem-grid,
       .services-grid,
+      .help-grid,
       .packages-grid,
       .trust-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1206,6 +1210,10 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
       }
 
+      .help-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
       .hero-proof {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         max-width: 720px;
@@ -1239,11 +1247,15 @@
       }
 
       .hero-title {
-        font-size: clamp(2.9rem, 12.7vw, 4.2rem);
+        font-size: clamp(3.45rem, 15.4vw, 5.05rem);
       }
 
       .hero-copy {
         font-size: 1rem;
+      }
+
+      .who-help .section-title {
+        font-size: clamp(2.75rem, 12.2vw, 4.2rem);
       }
 
       .final-panel {
@@ -1279,21 +1291,22 @@
   </nav>
 
   <div class="sticky-cta" aria-label="Contact Matt">
-    <a class="sms-link" data-sms="I need help with a website, logo, poster, landing page, or cleanup.">Text Matt</a>
+    <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup.">Text Matt</a>
     <a href="tel:4693687662">Call</a>
+    <a href="mailto:matt@manicwebmaster.com">Email</a>
   </div>
 
   <main>
     <section class="hero">
       <div class="container hero-content">
-        <p class="eyebrow">Built in DFW. Aimed at customers.</p>
-        <h1 class="hero-title">Websites and brand graphics for <span>local businesses</span> that need to convert.</h1>
+        <p class="eyebrow">DFW freelance web + graphic design</p>
+        <h1 class="hero-title">Websites, brands, and graphics that <span>pull</span> their weight.</h1>
         <p class="hero-copy">Websites, landing pages, logos, and campaign graphics built to explain fast, look sharp, and turn visitors into calls, texts, orders, and leads.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary sms-link" data-sms="I need help with a website, logo, poster, landing page, or cleanup.">Text me your idea</a>
+          <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup." class="btn btn-primary">Text me your idea</a>
           <a href="mailto:matt@manicwebmaster.com" class="btn btn-ghost">Email the brief</a>
         </div>
-        <div class="hero-proof reveal" aria-label="ManicWebmaster strengths">
+        <div class="hero-proof" aria-label="ManicWebmaster strengths">
           <div class="proof-chip">
             <strong>Mobile</strong>
             <span>Built for phone traffic</span>
@@ -1315,7 +1328,7 @@
     </section>
 
     <section class="problem">
-      <div class="container">
+      <div class="container reveal">
         <p class="eyebrow">The problem</p>
         <h2 class="section-title">Most sites look fine. Then nothing happens.</h2>
         <p class="section-lede">A business page needs more than a decent screenshot. It has to answer fast, build trust, and make the next move obvious.</p>
@@ -1344,12 +1357,12 @@
         <p class="eyebrow">Existing site cleanup</p>
         <h2>Got an old site? Keep what works. Fix what does not.</h2>
         <p>I can keep the parts already helping your business, cut the confusing stuff, and rebuild the customer path around faster pages, clearer calls to action, and better mobile flow.</p>
-        <a class="btn btn-dark sms-link" data-sms="I have an existing site that needs cleanup or a rebuild.">Text about a rebuild</a>
+        <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20have%20an%20existing%20site%20that%20needs%20cleanup%20or%20a%20rebuild." class="btn btn-dark">Text about a rebuild</a>
       </div>
     </section>
 
     <section class="services" id="services">
-      <div class="container">
+      <div class="container reveal">
         <p class="eyebrow">What I build</p>
         <h2 class="section-title">Web work and graphics with a job to do.</h2>
         <p class="section-lede">Useful, sharp-looking pieces for small businesses that need credibility and customer action without agency layers.</p>
@@ -1382,8 +1395,42 @@
       </div>
     </section>
 
+    <section class="who-help">
+      <div class="container reveal">
+        <p class="eyebrow">Who I help</p>
+        <h2 class="section-title">Local businesses, new brands, and loud ideas.</h2>
+        <p class="section-lede">If you need people to understand what you offer and take the next step, I can help shape the page, brand, or graphic system around that.</p>
+        <div class="help-grid">
+          <article class="help-item">
+            <b>Restaurants</b>
+            <p>Menus, orders, reservations, location info, and promos.</p>
+          </article>
+          <article class="help-item">
+            <b>Service businesses</b>
+            <p>Trust signals, service pages, quotes, calls, and local leads.</p>
+          </article>
+          <article class="help-item">
+            <b>Fitness brands</b>
+            <p>Coaches, gyms, personal brands, programs, and launches.</p>
+          </article>
+          <article class="help-item">
+            <b>Local shops</b>
+            <p>Simple sites, offer pages, product highlights, and campaigns.</p>
+          </article>
+          <article class="help-item">
+            <b>Events + promos</b>
+            <p>Posters, social graphics, landing pages, and event pushes.</p>
+          </article>
+          <article class="help-item">
+            <b>New businesses</b>
+            <p>First impressions that feel real from day one.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="packages" id="packages">
-      <div class="container">
+      <div class="container reveal">
         <p class="eyebrow">Starter scopes</p>
         <h2 class="section-title">Pick the lane. Then we shape the work.</h2>
         <p class="section-lede">No fake package theater. These are simple starting points so you know what kind of help to ask for.</p>
@@ -1391,26 +1438,22 @@
           <article class="package-card" data-label="Scope 01">
             <b>Landing page sprint</b>
             <p>A focused single page for one offer, ad campaign, service area, launch, or promotion.</p>
-            <p class="price-anchor">Typical range: $400–$900</p>
-            <a class="sms-link" data-sms="I need a landing page sprint.">Text this scope</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20landing%20page%20sprint.">Text this scope</a>
           </article>
           <article class="package-card" data-label="Scope 02">
             <b>Business website</b>
             <p>A clean mobile-first site with service sections, trust signals, work proof, and clear contact flow.</p>
-            <p class="price-anchor">Typical range: $1,200–$3,500</p>
-            <a class="sms-link" data-sms="I need a business website.">Text this scope</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20business%20website.">Text this scope</a>
           </article>
           <article class="package-card" data-label="Scope 03">
             <b>Brand starter</b>
             <p>Logo direction, colors, typography, and practical visual rules for a business that needs to look real.</p>
-            <p class="price-anchor">Typical range: $500–$1,500</p>
-            <a class="sms-link" data-sms="I need a brand starter.">Text this scope</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20brand%20starter.">Text this scope</a>
           </article>
           <article class="package-card" data-label="Scope 04">
             <b>Graphic pack</b>
             <p>Poster, social, promo, and campaign visuals with a sharp brand language people remember.</p>
-            <p class="price-anchor">Typical range: $250–$800</p>
-            <a class="sms-link" data-sms="I need a graphic pack.">Text this scope</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20graphic%20pack.">Text this scope</a>
           </article>
         </div>
       </div>
@@ -1418,10 +1461,10 @@
 
     <section class="work" id="work">
       <div class="container">
-        <div>
-          <p class="eyebrow">How I approach the work</p>
-          <h2 class="section-title">Different businesses. Same playbook.</h2>
-          <p class="section-lede">These are the directions I take for different business types. The look changes. The strategy of understand, trust, and act stays the same.</p>
+        <div class="reveal">
+          <p class="eyebrow">Visual proof</p>
+          <h2 class="section-title">Different businesses. Same mission.</h2>
+          <p class="section-lede">The work should feel custom, but the strategy stays steady: make the customer understand, trust, and act.</p>
         </div>
         <div class="work-grid reveal">
           <article class="work-card">
@@ -1521,21 +1564,13 @@
               <p>You decide if it is worth building out.</p>
             </div>
           </div>
-          <div class="timeline">
-            <p class="eyebrow">Timeline</p>
-            <ul>
-              <li><strong>Same day:</strong> Reply with rough fit and direction.</li>
-              <li><strong>48 hours:</strong> First visual or strategy concept.</li>
-              <li><strong>Week 1:</strong> Working draft you can react to.</li>
-            </ul>
-          </div>
           <div class="intent-grid" aria-label="Text Matt by project type">
-            <a class="sms-link" data-sms="I need a website for my business.">Need a website</a>
-            <a class="sms-link" data-sms="I need branding or a brand starter.">Need branding</a>
-            <a class="sms-link" data-sms="I need posters or promo graphics.">Need graphics</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20website%20for%20my%20business.">Need a website</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20branding%20or%20a%20brand%20starter.">Need branding</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20posters%20or%20promo%20graphics.">Need graphics</a>
           </div>
           <div class="offer-actions">
-            <a class="btn btn-dark sms-link" data-sms="I need help with a website, logo, poster, landing page, or cleanup.">Text (469) 368-7662</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup." class="btn btn-dark">Text (469) 368-7662</a>
             <a href="tel:4693687662" class="btn btn-ghost">Call Matt</a>
           </div>
         </div>
@@ -1543,16 +1578,15 @@
     </section>
 
     <section class="bio">
-      <div class="container">
+      <div class="container reveal">
         <p class="eyebrow">The human part</p>
         <h2 class="section-title">I'm Matt. I build this stuff directly.</h2>
         <p class="bio-copy"><strong>ManicWebmaster is me, not a maze of account managers.</strong> Every project starts with a text. No account manager. No ticket system. You talk to the person thinking through the strategy, shaping the brand, designing the graphics, and building the site.</p>
-        <p class="bio-copy">Day job in retail ops as a Walgreens shift manager. Nights and weekends I ship: web tools, brand systems, books, and small business sites. You are hiring an operator who builds his own stuff, not an agency reselling overseas labor.</p>
       </div>
     </section>
 
     <section class="trust">
-      <div class="container">
+      <div class="container reveal">
         <p class="eyebrow">Why it works</p>
         <h2 class="section-title">Local. Sharp. Easy to work with.</h2>
         <div class="trust-grid">
@@ -1577,17 +1611,13 @@
     </section>
 
     <section class="faq">
-      <div class="container">
+      <div class="container reveal">
         <p class="eyebrow">Quick answers</p>
         <h2 class="section-title">A few things people usually ask first.</h2>
         <div class="faq-list">
           <article class="faq-item">
             <b>How fast can you start?</b>
             <p>Usually very fast. Text me what you need and I can tell you what the first move looks like.</p>
-          </article>
-          <article class="faq-item">
-            <b>What does it cost?</b>
-            <p>Depends on scope. Landing pages start small, full websites scale up, brand work sits in the middle. Text me what you have in mind and I will quote it back the same day.</p>
           </article>
           <article class="faq-item">
             <b>Do you work outside DFW?</b>
@@ -1615,12 +1645,12 @@
           <h2>Your website should not just exist. It should <span>work.</span></h2>
           <p>Choose the closest path and send the messy version. I can turn it into the page, brand, or graphic system customers actually understand.</p>
           <div class="intent-grid" aria-label="Choose your project path">
-            <a class="sms-link" data-sms="I need a website for my business.">Website</a>
-            <a class="sms-link" data-sms="I need branding or a brand starter.">Branding</a>
-            <a class="sms-link" data-sms="I need posters or promo graphics.">Graphics</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20website%20for%20my%20business.">Website</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20branding%20or%20a%20brand%20starter.">Branding</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20posters%20or%20promo%20graphics.">Graphics</a>
           </div>
           <div class="final-actions">
-            <a class="btn btn-primary sms-link" data-sms="I need help with a website, logo, poster, landing page, or cleanup.">Text me your idea</a>
+            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup." class="btn btn-primary">Text me your idea</a>
             <a href="mailto:matt@manicwebmaster.com" class="btn btn-ghost">matt@manicwebmaster.com</a>
           </div>
         </div>
@@ -1637,12 +1667,6 @@
   </footer>
 
   <script>
-    const PHONE = '4693687662';
-    document.querySelectorAll('.sms-link').forEach(a => {
-      const body = encodeURIComponent('Hey Matt, ' + a.dataset.sms);
-      a.href = `sms:${PHONE}?&body=${body}`;
-    });
-
     const revealEls = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver(
