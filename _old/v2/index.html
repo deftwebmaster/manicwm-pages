@@ -479,9 +479,7 @@
 
     .problem-grid,
     .services-grid,
-    .packages-grid,
     .work-grid,
-    .poster-grid,
     .trust-grid {
       display: grid;
       gap: 14px;
@@ -553,68 +551,6 @@
       opacity: 0.75;
     }
 
-    .packages {
-      background:
-        linear-gradient(180deg, rgba(242,239,231,0.04), rgba(242,239,231,0)),
-        var(--ink);
-    }
-
-    .package-card {
-      position: relative;
-      display: grid;
-      gap: 14px;
-      min-height: 220px;
-      padding: 22px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background:
-        linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.025)),
-        #0b0f16;
-    }
-
-    .package-card::before {
-      content: attr(data-label);
-      color: var(--cyan);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 900;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .package-card b {
-      color: var(--paper);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.7rem;
-      font-weight: 900;
-      line-height: 0.98;
-      text-transform: uppercase;
-    }
-
-    .package-card p {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .package-card a {
-      align-self: end;
-      width: max-content;
-      color: var(--paper);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.94rem;
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      text-transform: uppercase;
-      border-bottom: 2px solid var(--cyan);
-    }
-
-    .package-card:nth-child(2) {
-      border-color: rgba(0,169,255,0.36);
-      box-shadow: inset 0 0 0 1px rgba(0,169,255,0.12);
-    }
-
     .work {
       background:
         linear-gradient(180deg, rgba(242,239,231,0.06), transparent 30%),
@@ -678,85 +614,6 @@
       text-transform: uppercase;
     }
 
-    .poster-proof {
-      padding-top: 0;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.04));
-    }
-
-    .poster-frame {
-      position: relative;
-      overflow: hidden;
-      min-height: 520px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(242,239,231,0.24);
-      background: #050608;
-      box-shadow: var(--shadow);
-    }
-
-    .poster-frame img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      min-height: 520px;
-      object-fit: cover;
-      filter: contrast(1.05) saturate(0.95);
-    }
-
-    .poster-frame::after {
-      content: 'GRAPHIC / POSTER / CAMPAIGN';
-      position: absolute;
-      left: 18px;
-      bottom: 18px;
-      padding: 8px 10px;
-      color: var(--ink);
-      background: var(--paper);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.8rem;
-      font-weight: 900;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      box-shadow: 6px 6px 0 var(--cyan);
-    }
-
-    .poster-copy {
-      padding: 28px 24px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background:
-        linear-gradient(135deg, rgba(0,169,255,0.12), transparent 36%),
-        linear-gradient(315deg, rgba(255,27,117,0.14), transparent 40%),
-        rgba(255,255,255,0.045);
-    }
-
-    .poster-copy h2 {
-      margin-top: 14px;
-      color: var(--paper);
-      font-size: clamp(2.55rem, 12vw, 5rem);
-      font-weight: 900;
-    }
-
-    .poster-copy p {
-      margin-top: 16px;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .poster-points {
-      display: grid;
-      gap: 10px;
-      margin-top: 22px;
-      list-style: none;
-    }
-
-    .poster-points li {
-      padding: 12px 14px;
-      border-left: 2px solid var(--cyan);
-      background: rgba(255,255,255,0.05);
-      color: var(--paper-2);
-      font-size: 0.92rem;
-    }
-
     .offer {
       color: var(--ink);
     }
@@ -790,12 +647,6 @@
       color: #30343e;
     }
 
-    .offer .btn-ghost {
-      color: var(--ink);
-      border-color: rgba(7,8,11,0.24);
-      background: rgba(255,255,255,0.38);
-    }
-
     .steps {
       position: relative;
       display: grid;
@@ -822,66 +673,6 @@
       margin-top: 8px;
       color: var(--ink);
       font-weight: 600;
-    }
-
-    .text-prompt {
-      position: relative;
-      margin-top: 18px;
-      padding: 16px;
-      border: 1px dashed rgba(7,8,11,0.32);
-      border-radius: 6px;
-      background: rgba(255,255,255,0.44);
-    }
-
-    .text-prompt b {
-      display: block;
-      color: var(--ink);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-
-    .text-prompt p {
-      margin-top: 8px;
-      color: #30343e;
-      font-size: 0.94rem;
-    }
-
-    .intent-grid {
-      position: relative;
-      display: grid;
-      gap: 10px;
-      margin-top: 24px;
-    }
-
-    .intent-grid a {
-      display: flex;
-      min-height: 52px;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 14px 16px;
-      border-radius: 6px;
-      border: 1px solid rgba(7,8,11,0.22);
-      color: var(--ink);
-      background: rgba(255,255,255,0.38);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1rem;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-
-    .intent-grid a::after {
-      content: '';
-      width: 24px;
-      height: 2px;
-      background: var(--ink);
-      box-shadow: 8px 0 0 var(--ink);
     }
 
     .offer-actions {
@@ -919,8 +710,6 @@
       padding: 30px 24px;
       border-radius: var(--radius);
       background:
-        linear-gradient(90deg, rgba(12,16,24,0.72), rgba(12,16,24,0.93)),
-        url('poster-graffiti.jpg') center 42% / cover,
         linear-gradient(135deg, rgba(0,169,255,0.22), transparent 36%),
         linear-gradient(315deg, rgba(255,27,117,0.2), transparent 40%),
         #0c1018;
@@ -1013,16 +802,11 @@
 
       .problem-grid,
       .services-grid,
-      .packages-grid,
       .trust-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .steps {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .intent-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
     }
@@ -1065,23 +849,13 @@
       }
 
       .work-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .poster-grid {
-        grid-template-columns: 0.9fr 1.1fr;
-        align-items: stretch;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
     }
 
     @media (min-width: 980px) {
       .services-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .packages-grid,
-      .work-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
 
       .hero-proof {
@@ -1115,14 +889,6 @@
       .hero-title {
         overflow-wrap: anywhere;
       }
-
-      .hero-title {
-        font-size: clamp(3.45rem, 15.4vw, 5.05rem);
-      }
-
-      .hero-copy {
-        font-size: 1rem;
-      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1142,13 +908,13 @@
     <a class="nav-logo" href="#"><span>Manic</span>Webmaster</a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#packages">Scopes</a></li>
-      <li><a href="#contact">Start</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <div class="sticky-cta" aria-label="Contact Matt">
-    <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup.">Text Matt</a>
+    <a href="sms:4693687662">Text Matt</a>
     <a href="tel:4693687662">Call</a>
     <a href="mailto:matt@manicwebmaster.com">Email</a>
   </div>
@@ -1157,28 +923,28 @@
     <section class="hero">
       <div class="container hero-content">
         <p class="eyebrow">DFW freelance web + graphic design</p>
-        <h1 class="hero-title">Websites, brands, and graphics that <span>pull</span> their weight.</h1>
-        <p class="hero-copy">I build websites, landing pages, logos, and campaign graphics that look sharp, load fast, explain the offer clearly, and give customers a clean next step.</p>
+        <h1 class="hero-title">Make the page <span>pull</span> its weight.</h1>
+        <p class="hero-copy">I build websites, landing pages, logos, and campaign graphics that look sharp, explain the offer fast, and give real customers a clean next step.</p>
         <div class="hero-actions">
-          <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup." class="btn btn-primary">Text me your idea</a>
+          <a href="sms:4693687662" class="btn btn-primary">Text me your idea</a>
           <a href="mailto:matt@manicwebmaster.com" class="btn btn-ghost">Email the brief</a>
         </div>
         <div class="hero-proof" aria-label="ManicWebmaster strengths">
-          <div class="proof-chip">
-            <strong>Mobile</strong>
-            <span>Built for phone traffic</span>
-          </div>
-          <div class="proof-chip">
-            <strong>Fast</strong>
-            <span>Lean static pages</span>
-          </div>
           <div class="proof-chip">
             <strong>Direct</strong>
             <span>You work with Matt</span>
           </div>
           <div class="proof-chip">
-            <strong>CTA</strong>
-            <span>Calls, texts, leads</span>
+            <strong>Local</strong>
+            <span>DFW business focus</span>
+          </div>
+          <div class="proof-chip">
+            <strong>Fast</strong>
+            <span>Text-first process</span>
+          </div>
+          <div class="proof-chip">
+            <strong>Built</strong>
+            <span>For calls and leads</span>
           </div>
         </div>
       </div>
@@ -1188,7 +954,7 @@
       <div class="container paper reveal">
         <p class="eyebrow">The new direction</p>
         <h2>Dark energy. Clean thinking.</h2>
-        <p>The feel is still Manic: rough marks, high contrast, blueprint lines, and bright paint. The layout gets calmer, clearer, and more mobile-first so the offer lands before the texture does.</p>
+        <p>The feel is still Manic: rough marks, high contrast, blueprint lines, and bright paint. The layout gets calmer, clearer, and more mobile-first so the offer lands before the noise does.</p>
       </div>
     </section>
 
@@ -1251,36 +1017,6 @@
       </div>
     </section>
 
-    <section class="packages" id="packages">
-      <div class="container reveal">
-        <p class="eyebrow">Starter scopes</p>
-        <h2 class="section-title">Pick the lane. Then we shape the work.</h2>
-        <p class="section-lede">No fake package theater. These are simple starting points so you know what kind of help to ask for.</p>
-        <div class="packages-grid">
-          <article class="package-card" data-label="Scope 01">
-            <b>Landing page sprint</b>
-            <p>A focused single page for one offer, ad campaign, service area, launch, or promotion.</p>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20landing%20page%20sprint.">Text this scope</a>
-          </article>
-          <article class="package-card" data-label="Scope 02">
-            <b>Business website</b>
-            <p>A clean mobile-first site with service sections, trust signals, work proof, and clear contact flow.</p>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20business%20website.">Text this scope</a>
-          </article>
-          <article class="package-card" data-label="Scope 03">
-            <b>Brand starter</b>
-            <p>Logo direction, colors, typography, and practical visual rules for a business that needs to look real.</p>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20brand%20starter.">Text this scope</a>
-          </article>
-          <article class="package-card" data-label="Scope 04">
-            <b>Graphic pack</b>
-            <p>Poster, social, promo, and campaign visuals with a sharp brand language people remember.</p>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20graphic%20pack.">Text this scope</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="work" id="work">
       <div class="container">
         <div class="reveal">
@@ -1327,37 +1063,6 @@
               </ul>
             </div>
           </article>
-
-          <article class="work-card">
-            <img src="poster-blueprint.jpg" alt="ManicWebmaster blueprint-style poster design" loading="lazy" width="800" height="600">
-            <div class="work-copy">
-              <b>Poster graphics</b>
-              <p>Campaign visuals with grit, contrast, and a clear brand mark.</p>
-              <ul class="work-list">
-                <li><span>Goal:</span> Make the brand impossible to miss</li>
-                <li><span>Path:</span> Poster, social crop, campaign asset</li>
-                <li><span>Feel:</span> Raw, technical, high-energy</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="poster-proof">
-      <div class="container poster-grid reveal">
-        <div class="poster-frame">
-          <img src="poster-graffiti.jpg" alt="ManicWebmaster graffiti-style campaign poster">
-        </div>
-        <div class="poster-copy">
-          <p class="eyebrow">Graphic design proof</p>
-          <h2>Posters, social graphics, and campaign visuals.</h2>
-          <p>This is where the page gets its edge. The site stays clean enough to sell, while the brand visuals can get louder when the piece calls for it.</p>
-          <ul class="poster-points">
-            <li>Wall-poster energy translated into usable business assets</li>
-            <li>Social crops, launch graphics, flyers, promos, and event pieces</li>
-            <li>Sharp visual language that still connects back to the website and brand</li>
-          </ul>
         </div>
       </div>
     </section>
@@ -1368,10 +1073,6 @@
           <p class="eyebrow">Zero pressure</p>
           <h2 class="section-title">Text me your idea. I'll send a concept.</h2>
           <p class="section-lede">No long discovery maze. No pitch-call theater. Just a quick read on what you need and a direction you can react to.</p>
-          <div class="text-prompt">
-            <b>What to text</b>
-            <p>Send your business name, what you sell, and what you need: website, logo, poster, landing page, graphic pack, or cleanup.</p>
-          </div>
           <div class="steps">
             <div class="step">
               <span>01</span>
@@ -1386,13 +1087,8 @@
               <p>You decide if it is worth building out.</p>
             </div>
           </div>
-          <div class="intent-grid" aria-label="Text Matt by project type">
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20website%20for%20my%20business.">Need a website</a>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20logo%20or%20brand%20starter.">Need a logo</a>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20posters%20or%20promo%20graphics.">Need graphics</a>
-          </div>
           <div class="offer-actions">
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup." class="btn btn-dark">Text (469) 368-7662</a>
+            <a href="sms:4693687662" class="btn btn-dark">Text (469) 368-7662</a>
             <a href="tel:4693687662" class="btn btn-ghost">Call Matt</a>
           </div>
         </div>
@@ -1413,20 +1109,20 @@
         <h2 class="section-title">Local. Sharp. Easy to work with.</h2>
         <div class="trust-grid">
           <article class="trust-item">
-            <b>Mobile-first builds</b>
-            <p>The page is planned for phone visitors first, because that is where most local intent starts.</p>
+            <b>DFW based</b>
+            <p>I know the local-business lane and the way people look for help around here.</p>
           </article>
           <article class="trust-item">
-            <b>Fast static pages</b>
-            <p>Lean files, clear sections, optimized visuals, and fewer moving parts than a bloated site builder.</p>
+            <b>Fast comms</b>
+            <p>Text me and get a real response from the person doing the work.</p>
           </article>
           <article class="trust-item">
-            <b>Direct owner comms</b>
-            <p>You text the person designing, writing, and building the thing. No handoff chain.</p>
+            <b>No layers</b>
+            <p>No handoff chain. No vague tickets. Just direct collaboration.</p>
           </article>
           <article class="trust-item">
-            <b>Conversion CTA flow</b>
-            <p>Every page gets an obvious next step: call, text, order, book, quote, or inquire.</p>
+            <b>Honest scope</b>
+            <p>I tell you what you actually need and what can wait.</p>
           </article>
         </div>
       </div>
@@ -1436,14 +1132,9 @@
       <div class="container">
         <div class="final-panel reveal">
           <h2>Your website should not just exist. It should <span>work.</span></h2>
-          <p>Choose the closest path and send the messy version. I can turn it into the page, brand, or graphic system customers actually understand.</p>
-          <div class="intent-grid" aria-label="Choose your project path">
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20website%20for%20my%20business.">Website</a>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20a%20logo%20or%20brand%20starter.">Logo</a>
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20posters%20or%20promo%20graphics.">Graphics</a>
-          </div>
+          <p>Send me the messy version of the idea. I can help turn it into the page, brand, or graphic system customers actually understand.</p>
           <div class="final-actions">
-            <a href="sms:4693687662?&body=Hey%20Matt%2C%20I%20need%20help%20with%20a%20website%2C%20logo%2C%20poster%2C%20landing%20page%2C%20or%20cleanup." class="btn btn-primary">Text me your idea</a>
+            <a href="sms:4693687662" class="btn btn-primary">Text me your idea</a>
             <a href="mailto:matt@manicwebmaster.com" class="btn btn-ghost">matt@manicwebmaster.com</a>
           </div>
         </div>
